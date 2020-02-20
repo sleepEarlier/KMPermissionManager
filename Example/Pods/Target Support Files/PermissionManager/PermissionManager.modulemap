@@ -1,0 +1,6 @@
+framework module PermissionManager {
+  umbrella header "PermissionManager-umbrella.h"
+
+  export *
+  module * { export * }
+}

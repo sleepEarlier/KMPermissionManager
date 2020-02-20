@@ -1,0 +1,16 @@
+PODS:
+  - PermissionManager (0.1.0)
+
+DEPENDENCIES:
+  - PermissionManager (from `../`)
+
+EXTERNAL SOURCES:
+  PermissionManager:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  PermissionManager: a07439b2fb940dfe4b99c1d83849b8ee01734a8c
+
+PODFILE CHECKSUM: a2bdcc66352353c8b1058beb08c1f765ece6da3c
+
+COCOAPODS: 1.8.4
