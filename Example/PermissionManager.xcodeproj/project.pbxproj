@@ -65,7 +65,7 @@
 		9AB171CDD64D85AD9EB51B5D /* Pods_PermissionManager_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PermissionManager_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4E0E74BBC32D65C0D034B2F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		AB55D3CF5F0805E62073DE10 /* Pods_PermissionManager_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PermissionManager_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E6DCF225A1CCD6591B9EF299 /* PermissionManager.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = PermissionManager.podspec; path = ../PermissionManager.podspec; sourceTree = "<group>"; };
+		E6DCF225A1CCD6591B9EF299 /* KMPermissionManager.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = KMPermissionManager.podspec; path = ../KMPermissionManager.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		F510E5033A4CDFDECF5EFD89 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -178,7 +178,7 @@
 		60FF7A9C1954A5C5007DD14C /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				E6DCF225A1CCD6591B9EF299 /* PermissionManager.podspec */,
+				E6DCF225A1CCD6591B9EF299 /* KMPermissionManager.podspec */,
 				A4E0E74BBC32D65C0D034B2F /* README.md */,
 				F510E5033A4CDFDECF5EFD89 /* LICENSE */,
 			);
