@@ -37,6 +37,6 @@ A simple tool help to handle permiss stuff on iOS, with unify permission status.
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+  s.frameworks = 'UIKit', 'Foundation', 'AVFoundation', 'Photos', 'CoreLocation', 'CoreTelephony', 'Contacts'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
