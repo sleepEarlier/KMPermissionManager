@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
 A simple tool help to handle permiss stuff on iOS, with unify permission status.
                        DESC
 
-  s.homepage         = 'https://github.com/jky130@qq.com/PermissionManager'
+  s.homepage         = 'https://github.com/sleepEarlier/KMPermissionManager.git'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'jky130@qq.com' => 'lindubo505@pingan.com.cn' }
-  s.source           = { :git => 'https://github.com/jky130@qq.com/PermissionManager.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/sleepEarlier/KMPermissionManager.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.platform = :iOS, '9.0'
