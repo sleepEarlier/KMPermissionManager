@@ -25,7 +25,7 @@ A simple tool help to handle permiss stuff on iOS, with unify permission status.
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'jky130@qq.com' => 'sleepEarlier' }
-  s.source           = { :git => 'https://github.com/sleepEarlier/KMPermissionManager.git',}
+  s.source           = { :git => 'https://github.com/sleepEarlier/KMPermissionManager.git', :tag => s.version }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.platform = :ios, '9.0'
