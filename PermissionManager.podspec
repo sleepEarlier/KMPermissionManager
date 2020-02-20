@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'PermissionManager'
-  s.version          = '0.1.0'
+  s.version          = '1.0.0'
   s.summary          = 'A tool help to handle permission stuff on iOS'
 
 # This description is used to generate tags and improve search results.

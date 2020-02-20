@@ -1,9 +1,9 @@
 # PermissionManager
 
-[![CI Status](https://img.shields.io/travis/jky130@qq.com/PermissionManager.svg?style=flat)](https://travis-ci.org/jky130@qq.com/PermissionManager)
-[![Version](https://img.shields.io/cocoapods/v/PermissionManager.svg?style=flat)](https://cocoapods.org/pods/PermissionManager)
-[![License](https://img.shields.io/cocoapods/l/PermissionManager.svg?style=flat)](https://cocoapods.org/pods/PermissionManager)
-[![Platform](https://img.shields.io/cocoapods/p/PermissionManager.svg?style=flat)](https://cocoapods.org/pods/PermissionManager)
+[![CI Status](https://img.shields.io/badge/build-passing-brightgreen)](https://travis-ci.org/jky130@qq.com/PermissionManager)
+[![Version](https://img.shields.io/badge/pod-1.0.0-brightgreen)](https://cocoapods.org/pods/PermissionManager)
+[![License](https://img.shields.io/badge/license-MIT-green)](https://cocoapods.org/pods/PermissionManager)
+[![Platform](https://img.shields.io/badge/platform-iOS%209.0%2B-brightgreen)](https://cocoapods.org/pods/PermissionManager)
 
 ## Example
 
@@ -22,7 +22,7 @@ pod 'PermissionManager'
 
 ## Author
 
-jky130@qq.com, lindubo505@pingan.com.cn
+jky130@qq.com
 
 ## License
 
