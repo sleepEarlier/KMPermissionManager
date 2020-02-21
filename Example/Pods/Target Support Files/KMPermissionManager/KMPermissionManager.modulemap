@@ -1,0 +1,6 @@
+framework module KMPermissionManager {
+  umbrella header "KMPermissionManager-umbrella.h"
+
+  export *
+  module * { export * }
+}

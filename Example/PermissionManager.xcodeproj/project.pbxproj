@@ -305,11 +305,11 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-PermissionManager_Example/Pods-PermissionManager_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/PermissionManager/PermissionManager.framework",
+				"${BUILT_PRODUCTS_DIR}/KMPermissionManager/KMPermissionManager.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PermissionManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KMPermissionManager.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

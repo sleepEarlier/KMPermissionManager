@@ -1,16 +1,16 @@
 PODS:
-  - PermissionManager (0.1.0)
+  - KMPermissionManager (1.0.0)
 
 DEPENDENCIES:
-  - PermissionManager (from `../`)
+  - KMPermissionManager (from `../`)
 
 EXTERNAL SOURCES:
-  PermissionManager:
+  KMPermissionManager:
     :path: "../"
 
 SPEC CHECKSUMS:
-  PermissionManager: a07439b2fb940dfe4b99c1d83849b8ee01734a8c
+  KMPermissionManager: a68d87a32f7d14a8050a3fa04825bb6b9387e444
 
-PODFILE CHECKSUM: a2bdcc66352353c8b1058beb08c1f765ece6da3c
+PODFILE CHECKSUM: 6fa4cd2b62eafd13990598c80a8ca98a2c4f3586
 
 COCOAPODS: 1.8.4

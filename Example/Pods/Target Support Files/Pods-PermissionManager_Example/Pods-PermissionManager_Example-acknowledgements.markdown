@@ -1,7 +1,7 @@
 # Acknowledgements
 This application makes use of the following third party libraries:
 
-## PermissionManager
+## KMPermissionManager
 
 Copyright (c) 2020 jky130@qq.com <lindubo505@pingan.com.cn>
 
