@@ -2,7 +2,7 @@
 //  KMCalandarPermission.m
 //  KMPermissionManager
 //
-//  Created by 林杜波 on 2020/2/21.
+//  Created by usopp on 2020/2/21.
 //
 
 #import "KMCalandarPermission.h"

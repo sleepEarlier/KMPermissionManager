@@ -2,7 +2,7 @@
 //  KMPermissionDefine.h
 //  PermissionManager
 //
-//  Created by 林杜波 on 2020/2/21.
+//  Created by usopp on 2020/2/21.
 //
 
 #ifndef KMPermissionDefine_h
