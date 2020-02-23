@@ -27,6 +27,12 @@ NS_ASSUME_NONNULL_BEGIN
 /// 请求权限
 + (void)requestPermission:(KMPermissionConfig *)config complete:(KMPermissionResult)completion;
 
+/// 统一权限状态值
++ (KMPermissionStatus)unifyStatusForPermission:(KMPermissionType)type;
+
+/// 原始权限状态值
++ (NSInteger)rawStatusForPermission:(KMPermissionType)type;
+
 @end
 
 NS_ASSUME_NONNULL_END

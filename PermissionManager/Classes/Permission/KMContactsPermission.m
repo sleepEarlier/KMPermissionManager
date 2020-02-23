@@ -12,9 +12,19 @@
 #endif
 
 @implementation KMContactsPermission
+
 + (CNAuthorizationStatus)status {
     CNAuthorizationStatus contackStatus = [CNContactStore authorizationStatusForEntityType:CNEntityTypeContacts];
     return contackStatus;
+}
+
++ (KMPermissionStatus)unifyStatusForPermission:(KMPermissionType)type {
+    CNAuthorizationStatus status = [self status];
+    return (KMPermissionType)status;
+}
+
++ (NSInteger)rawStatusForPermission:(KMPermissionType)type {
+    return [self status];
 }
 
 /// 是否未请求过权限

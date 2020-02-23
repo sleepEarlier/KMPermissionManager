@@ -22,56 +22,70 @@
 }
 
 - (IBAction)onCamera:(id)sender {
-    [self logStatus:[KMPermissionManager cameraPermissionStatus] forCategory:@"Camera"];
-    [KMPermissionManager requestCameraPermissionOnSuccess:^{
-        [self logStatus:[KMPermissionManager cameraPermissionStatus] forCategory:@"Camera"];
-    } failure:^(KMPermissionStatus status) {
-        [self logStatus:status forCategory:@"Camera"];
+    [self logStatus:[KMPermissionManager rawStatusForPermission:KMPermissionTypeCamera] forCategory:@"Camera"];
+    [KMPermissionManager requestPermission:[KMPermissionConfig configWithType:KMPermissionTypeCamera] complete:^(BOOL rst) {
+        [self logStatus:[KMPermissionManager rawStatusForPermission:KMPermissionTypeCamera] forCategory:@"Camera"];
     }];
 }
 
 - (IBAction)onAlbum:(id)sender {
-    [self logStatus:[KMPermissionManager photoLibraryPermissionStatus] forCategory:@"PhotoLibrary"];
-    [KMPermissionManager requestPhotoLibraryPermissionOnSuccess:^{
-        [self logStatus:[KMPermissionManager photoLibraryPermissionStatus] forCategory:@"PhotoLibrary"];
-    } failure:^(KMPermissionStatus status) {
-        [self logStatus:status forCategory:@"PhotoLibrary"];
+    [self logStatus:[KMPermissionManager rawStatusForPermission:KMPermissionTypePhotoLibray] forCategory:@"PhotoLibrary"];
+    [KMPermissionManager requestPermission:[KMPermissionConfig configWithType:KMPermissionTypePhotoLibray] complete:^(BOOL rst) {
+        [self logStatus:[KMPermissionManager rawStatusForPermission:KMPermissionTypePhotoLibray] forCategory:@"PhotoLibrary"];
     }];
 }
 
 - (IBAction)onLocate:(id)sender {
-    [self logStatus:[KMPermissionManager locationPermissionStatus] forCategory:@"Location"];
-    [KMPermissionManager requestLocationPermissionWhenInUse:YES success:^{
-        [self logStatus:[KMPermissionManager locationPermissionStatus] forCategory:@"Location"];
-    } failre:^(KMPermissionStatus status) {
-        [self logStatus:status forCategory:@"Location"];
+    [self logStatus:[KMPermissionManager rawStatusForPermission:KMPermissionTypeLocation] forCategory:@"Location"];
+    KMPermissionConfig *config = [KMPermissionConfig configWithType:KMPermissionTypeLocation];
+    config.locationType = KMLocationTypeAlways;
+    config.allowsBackgroundLocationUpdates = NO;
+    [KMPermissionManager requestPermission:config complete:^(BOOL rst) {
+        [self logStatus:[KMPermissionManager rawStatusForPermission:KMPermissionTypeLocation] forCategory:@"Location"];
     }];
 }
 
 - (IBAction)onContact:(id)sender {
-    [self logStatus:[KMPermissionManager contactsPermissionStatus] forCategory:@"Contacts"];
-    [KMPermissionManager requestContactsPermissionOnSuccess:^{
-        [self logStatus:[KMPermissionManager contactsPermissionStatus] forCategory:@"Contacts"];
-    } failure:^(KMPermissionStatus status) {
-        [self logStatus:status forCategory:@"Contacts"];
+    [self logStatus:[KMPermissionManager rawStatusForPermission:KMPermissionTypeContacts] forCategory:@"Contacts"];
+    [KMPermissionManager requestPermission:[KMPermissionConfig configWithType:KMPermissionTypeContacts] complete:^(BOOL rst) {
+        [self logStatus:[KMPermissionManager rawStatusForPermission:KMPermissionTypeContacts] forCategory:@"Contacts"];
     }];
 }
 
 - (IBAction)onMicrophone:(id)sender {
-    [self logStatus:[KMPermissionManager microphonePermissionStatus] forCategory:@"Microphone"];
-    [KMPermissionManager requestMicrophonePermissionOnSuccess:^{
-        [self logStatus:[KMPermissionManager microphonePermissionStatus] forCategory:@"Microphone"];
-    } failure:^(KMPermissionStatus status) {
-        [self logStatus:status forCategory:@"Microphone"];
+    [self logStatus:[KMPermissionManager rawStatusForPermission:KMPermissionTypeMicrophone] forCategory:@"Microphone"];
+    [KMPermissionManager requestPermission:[KMPermissionConfig configWithType:KMPermissionTypeMicrophone] complete:^(BOOL rst) {
+        [self logStatus:[KMPermissionManager rawStatusForPermission:KMPermissionTypeMicrophone] forCategory:@"Microphone"];
     }];
 }
 
 - (IBAction)onPush:(id)sender {
-    [self logStatus:[KMPermissionManager notificationPermissionStatus] forCategory:@"Notification"];
-    [KMPermissionManager requestNotificationPermissionOnSuccess:^{
-        [self logStatus:[KMPermissionManager notificationPermissionStatus] forCategory:@"Notification"];
-    } failure:^(KMPermissionStatus status) {
-        [self logStatus:status forCategory:@"Notification"];
+    [self logStatus:[KMPermissionManager rawStatusForPermission:KMPermissionTypeNotification] forCategory:@"Notification"];
+    
+    KMPermissionConfig *config = [KMPermissionConfig configWithType:KMPermissionTypeNotification];
+    
+    if (@available(iOS 10.0, *)) {
+        UNAuthorizationOptions option = UNAuthorizationOptionAlert | UNAuthorizationOptionBadge | UNAuthorizationOptionSound;
+        config.options = option;
+    } else {
+        UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeSound | UIUserNotificationTypeBadge | UIUserNotificationTypeAlert categories:nil];
+        config.settings = settings;
+    }
+    
+    
+    [KMPermissionManager requestPermission:config complete:^(BOOL rst) {
+        [self logStatus:[KMPermissionManager rawStatusForPermission:KMPermissionTypeNotification] forCategory:@"Notification"];
+    }];
+}
+
+- (IBAction)onHealth:(id)sender {
+    NSSet<HKObjectType *> *types = [NSSet setWithObject:[HKObjectType quantityTypeForIdentifier:HKQuantityTypeIdentifierStepCount]];
+    [KMPermissionConfig setObjectTypes:types];
+    
+    [self logStatus:[KMPermissionManager rawStatusForPermission:KMPermissionTypeHealth] forCategory:@"Notification"];
+    
+    [KMPermissionManager requestPermission:[KMPermissionConfig configWithType:KMPermissionTypeHealth] complete:^(BOOL rst) {
+        [self logStatus:[KMPermissionManager rawStatusForPermission:KMPermissionTypeHealth] forCategory:@"Notification"];
     }];
 }
 

@@ -17,9 +17,22 @@
 @end
 
 @implementation KMLocationPermission
+
 + (CLAuthorizationStatus)status {
     CLAuthorizationStatus locationStatus = [CLLocationManager authorizationStatus];
     return locationStatus;
+}
+
++ (KMPermissionStatus)unifyStatusForPermission:(KMPermissionType)type {
+    CLAuthorizationStatus status = [self status];
+    if (status >= kCLAuthorizationStatusAuthorizedAlways) {
+        return KMPermissionStatusAuthorized;
+    }
+    return (KMPermissionType)status;
+}
+
++ (NSInteger)rawStatusForPermission:(KMPermissionType)type {
+    return [self status];
 }
 
 /// 是否未请求过权限

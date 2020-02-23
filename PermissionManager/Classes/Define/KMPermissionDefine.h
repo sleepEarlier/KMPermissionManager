@@ -20,6 +20,13 @@ typedef NS_ENUM(NSInteger, KMPermissionType) {
     KMPermissionTypeHealth
 };
 
+typedef NS_ENUM(NSUInteger, KMPermissionStatus) {
+    KMPermissionStatusNotDetermined = 0,
+    KMPermissionStatusRestricted,
+    KMPermissionStatusDenied,
+    KMPermissionStatusAuthorized
+};
+
 typedef void(^KMPermissionResult)(BOOL rst);
 
 #endif /* KMPermissionDefine_h */

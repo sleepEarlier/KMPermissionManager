@@ -17,6 +17,23 @@
     return st;
 }
 
++ (KMPermissionStatus)unifyStatusForPermission:(KMPermissionType)type {
+    HKAuthorizationStatus status = [self status];
+    if (status == HKAuthorizationStatusNotDetermined) {
+        return KMPermissionStatusNotDetermined;
+    }
+    else if (status == HKAuthorizationStatusSharingDenied){
+        return KMPermissionStatusDenied;
+    }
+    else {
+        return KMPermissionStatusAuthorized;
+    }
+}
+
++ (NSInteger)rawStatusForPermission:(KMPermissionType)type {
+    return [self status];
+}
+
 /// 是否未请求过权限
 + (BOOL)isNotDeterminedForPermission:(KMPermissionType)type {
     BOOL rst = ([self status] == HKAuthorizationStatusNotDetermined);

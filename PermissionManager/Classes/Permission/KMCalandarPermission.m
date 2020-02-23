@@ -16,6 +16,15 @@
     return status;
 }
 
++ (KMPermissionStatus)unifyStatusForPermission:(KMPermissionType)type {
+    EKAuthorizationStatus status = [self status];
+    return (KMPermissionType)status;
+}
+
++ (NSInteger)rawStatusForPermission:(KMPermissionType)type {
+    return [self status];
+}
+
 /// 是否未请求过权限
 + (BOOL)isNotDeterminedForPermission:(KMPermissionType)type {
     BOOL rst = [self status] == EKAuthorizationStatusNotDetermined;

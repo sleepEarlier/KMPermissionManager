@@ -50,6 +50,14 @@
     [[self classForType:config.type] requestPermission:config complete:completion];
 }
 
++ (KMPermissionStatus)unifyStatusForPermission:(KMPermissionType)type {
+    return [[self classForType:type] unifyStatusForPermission:type];
+}
+
++ (NSInteger)rawStatusForPermission:(KMPermissionType)type {
+    return [[self classForType:type] rawStatusForPermission:type];
+}
+
 #pragma mark - Help
 + (Class<KMPermissionProtocol>)classForType:(KMPermissionType)type {
     switch (type) {

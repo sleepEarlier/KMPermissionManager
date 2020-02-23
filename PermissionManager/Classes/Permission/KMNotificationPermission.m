@@ -11,20 +11,14 @@
 #import <UserNotifications/UserNotifications.h>
 #endif
 
-typedef NS_ENUM(NSInteger, KMNotificationPermissionStatus) {
-    KMNotificationPermissionStatusNotDetermined = 0,
-    KMNotificationPermissionStatusDenied        = 1,
-    KMNotificationPermissionStatusAuthorized    = 2,
-};
-
 @implementation KMNotificationPermission
 
-+ (KMNotificationPermissionStatus)status {
++ (KMPermissionStatus)status {
     if (@available(iOS 10.0, *)) {
         dispatch_semaphore_t sema = dispatch_semaphore_create(0);
-        __block KMNotificationPermissionStatus status;
+        __block KMPermissionStatus status;
         [[UNUserNotificationCenter currentNotificationCenter] getNotificationSettingsWithCompletionHandler:^(UNNotificationSettings * _Nonnull settings) {
-            status = [self statusFromUNAuthorizationStatus:settings.authorizationStatus];
+            status = [self unifyStatusFromUNAuthorizationStatus:settings.authorizationStatus];
            dispatch_semaphore_signal(sema);
         }];
 
@@ -43,29 +37,44 @@ typedef NS_ENUM(NSInteger, KMNotificationPermissionStatus) {
     } else {
         UIUserNotificationSettings *setting = [[UIApplication sharedApplication] currentUserNotificationSettings];
         if (!setting) {
-            return KMNotificationPermissionStatusNotDetermined;
+            return KMPermissionStatusNotDetermined;
         }
         BOOL enable = (UIUserNotificationTypeNone == setting.types) ? NO : YES;
-        KMNotificationPermissionStatus status = enable ? KMNotificationPermissionStatusAuthorized : KMNotificationPermissionStatusDenied;
+        KMPermissionStatus status = enable ? KMPermissionStatusAuthorized : KMPermissionStatusDenied;
         return status;
+    }
+}
+
++ (KMPermissionStatus)unifyStatusForPermission:(KMPermissionType)type {
+    return [self status];
+}
+
++ (NSInteger)rawStatusForPermission:(KMPermissionType)type {
+    // return UNAuthorizationStatus
+    KMPermissionStatus status = [self status];
+    if (status == KMPermissionStatusNotDetermined) {
+        return status;
+    }
+    else {
+        return status - 1;
     }
 }
 
 /// 是否未请求过权限
 + (BOOL)isNotDeterminedForPermission:(KMPermissionType)type {
-    BOOL rst = ([self status] == KMNotificationPermissionStatusNotDetermined);
+    BOOL rst = ([self status] == KMPermissionStatusNotDetermined);
     return rst;
 }
 
 /// 是否已授权
 + (BOOL)isAuthorizedForPermission:(KMPermissionType)type {
-    BOOL rst = ([self status] == KMNotificationPermissionStatusAuthorized);
+    BOOL rst = ([self status] == KMPermissionStatusAuthorized);
     return rst;
 }
 
 /// 是否已拒绝或设备被禁用
 + (BOOL)isRestrictedOrDeniedForPermission:(KMPermissionType)type {
-    BOOL rst = ([self status] == KMNotificationPermissionStatusDenied);
+    BOOL rst = ([self status] == KMPermissionStatusDenied);
     return rst;
 }
 
@@ -92,14 +101,16 @@ typedef NS_ENUM(NSInteger, KMNotificationPermissionStatus) {
 }
 
 #pragma mark - Help
-+(KMNotificationPermissionStatus)statusFromUNAuthorizationStatus:(NSInteger)status {
-    if (@available(iOS 10.0, *)) {
-        if (status >= UNAuthorizationStatusAuthorized) {
-            return KMNotificationPermissionStatusAuthorized;
-        }
-        return (KMNotificationPermissionStatus)status;
-    } else {
-        return KMNotificationPermissionStatusNotDetermined;
++ (KMPermissionStatus)unifyStatusFromUNAuthorizationStatus:(UNAuthorizationStatus)status API_AVAILABLE(ios(10.0)){
+    if (status == UNAuthorizationStatusNotDetermined) {
+        return KMPermissionStatusNotDetermined;
+    }
+    else if (status == UNAuthorizationStatusDenied) {
+        return KMPermissionStatusDenied;
+    }
+    else {
+        // 推送没有Restricted状态
+        return KMPermissionStatusAuthorized;
     }
 }
 

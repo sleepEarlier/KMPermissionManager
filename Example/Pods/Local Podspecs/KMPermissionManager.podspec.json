@@ -1,6 +1,6 @@
 {
   "name": "KMPermissionManager",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "summary": "A tool help to handle permission stuff on iOS",
   "description": "A simple tool help to handle permiss stuff on iOS, with unify permission status.",
   "homepage": "https://github.com/sleepEarlier/KMPermissionManager.git",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/sleepEarlier/KMPermissionManager.git",
-    "tag": "1.0.0"
+    "tag": "2.0.0"
   },
   "platforms": {
     "ios": "9.0"
@@ -26,6 +26,7 @@
     "Photos",
     "CoreLocation",
     "CoreTelephony",
-    "Contacts"
+    "Contacts",
+    "HealthKit"
   ]
 }
