@@ -22,45 +22,45 @@
 }
 
 - (IBAction)onCamera:(id)sender {
-    [self logStatus:[KMPermissionManager rawStatusForPermission:KMPermissionTypeCamera] forCategory:@"Camera"];
+    [self logStatus:[KMPermissionManager unifyStatusForPermission:KMPermissionTypeCamera] forCategory:@"Camera"];
     [KMPermissionManager requestPermission:[KMPermissionConfig configWithType:KMPermissionTypeCamera] complete:^(BOOL rst) {
-        [self logStatus:[KMPermissionManager rawStatusForPermission:KMPermissionTypeCamera] forCategory:@"Camera"];
+        [self logStatus:[KMPermissionManager unifyStatusForPermission:KMPermissionTypeCamera] forCategory:@"Camera"];
     }];
 }
 
 - (IBAction)onAlbum:(id)sender {
-    [self logStatus:[KMPermissionManager rawStatusForPermission:KMPermissionTypePhotoLibray] forCategory:@"PhotoLibrary"];
+    [self logStatus:[KMPermissionManager unifyStatusForPermission:KMPermissionTypePhotoLibray] forCategory:@"PhotoLibrary"];
     [KMPermissionManager requestPermission:[KMPermissionConfig configWithType:KMPermissionTypePhotoLibray] complete:^(BOOL rst) {
-        [self logStatus:[KMPermissionManager rawStatusForPermission:KMPermissionTypePhotoLibray] forCategory:@"PhotoLibrary"];
+        [self logStatus:[KMPermissionManager unifyStatusForPermission:KMPermissionTypePhotoLibray] forCategory:@"PhotoLibrary"];
     }];
 }
 
 - (IBAction)onLocate:(id)sender {
-    [self logStatus:[KMPermissionManager rawStatusForPermission:KMPermissionTypeLocation] forCategory:@"Location"];
+    [self logStatus:[KMPermissionManager unifyStatusForPermission:KMPermissionTypeLocation] forCategory:@"Location"];
     KMPermissionConfig *config = [KMPermissionConfig configWithType:KMPermissionTypeLocation];
     config.locationType = KMLocationTypeAlways;
     config.allowsBackgroundLocationUpdates = NO;
     [KMPermissionManager requestPermission:config complete:^(BOOL rst) {
-        [self logStatus:[KMPermissionManager rawStatusForPermission:KMPermissionTypeLocation] forCategory:@"Location"];
+        [self logStatus:[KMPermissionManager unifyStatusForPermission:KMPermissionTypeLocation] forCategory:@"Location"];
     }];
 }
 
 - (IBAction)onContact:(id)sender {
-    [self logStatus:[KMPermissionManager rawStatusForPermission:KMPermissionTypeContacts] forCategory:@"Contacts"];
+    [self logStatus:[KMPermissionManager unifyStatusForPermission:KMPermissionTypeContacts] forCategory:@"Contacts"];
     [KMPermissionManager requestPermission:[KMPermissionConfig configWithType:KMPermissionTypeContacts] complete:^(BOOL rst) {
-        [self logStatus:[KMPermissionManager rawStatusForPermission:KMPermissionTypeContacts] forCategory:@"Contacts"];
+        [self logStatus:[KMPermissionManager unifyStatusForPermission:KMPermissionTypeContacts] forCategory:@"Contacts"];
     }];
 }
 
 - (IBAction)onMicrophone:(id)sender {
-    [self logStatus:[KMPermissionManager rawStatusForPermission:KMPermissionTypeMicrophone] forCategory:@"Microphone"];
+    [self logStatus:[KMPermissionManager unifyStatusForPermission:KMPermissionTypeMicrophone] forCategory:@"Microphone"];
     [KMPermissionManager requestPermission:[KMPermissionConfig configWithType:KMPermissionTypeMicrophone] complete:^(BOOL rst) {
-        [self logStatus:[KMPermissionManager rawStatusForPermission:KMPermissionTypeMicrophone] forCategory:@"Microphone"];
+        [self logStatus:[KMPermissionManager unifyStatusForPermission:KMPermissionTypeMicrophone] forCategory:@"Microphone"];
     }];
 }
 
 - (IBAction)onPush:(id)sender {
-    [self logStatus:[KMPermissionManager rawStatusForPermission:KMPermissionTypeNotification] forCategory:@"Notification"];
+    [self logStatus:[KMPermissionManager unifyStatusForPermission:KMPermissionTypeNotification] forCategory:@"Notification"];
     
     KMPermissionConfig *config = [KMPermissionConfig configWithType:KMPermissionTypeNotification];
     
@@ -74,18 +74,25 @@
     
     
     [KMPermissionManager requestPermission:config complete:^(BOOL rst) {
-        [self logStatus:[KMPermissionManager rawStatusForPermission:KMPermissionTypeNotification] forCategory:@"Notification"];
+        [self logStatus:[KMPermissionManager unifyStatusForPermission:KMPermissionTypeNotification] forCategory:@"Notification"];
     }];
 }
 
 - (IBAction)onHealth:(id)sender {
-    NSSet<HKObjectType *> *types = [NSSet setWithObject:[HKObjectType quantityTypeForIdentifier:HKQuantityTypeIdentifierStepCount]];
-    [KMPermissionConfig setObjectTypes:types];
+    NSSet<HKObjectType *> *readTypes = [NSSet setWithObject:[HKObjectType quantityTypeForIdentifier:HKQuantityTypeIdentifierStepCount]];
+    NSSet<HKSampleType *> *shareTypes = [NSSet setWithObject:[HKSampleType quantityTypeForIdentifier:HKQuantityTypeIdentifierStepCount]];
+    [KMPermissionConfig setReadTypes:readTypes];
+    [KMPermissionConfig setShareTypes:shareTypes];
     
-    [self logStatus:[KMPermissionManager rawStatusForPermission:KMPermissionTypeHealth] forCategory:@"Notification"];
+    [self logStatus:[KMPermissionManager unifyStatusForPermission:KMPermissionTypeHealth] forCategory:@"healthKit"];
     
     [KMPermissionManager requestPermission:[KMPermissionConfig configWithType:KMPermissionTypeHealth] complete:^(BOOL rst) {
-        [self logStatus:[KMPermissionManager rawStatusForPermission:KMPermissionTypeHealth] forCategory:@"Notification"];
+        [self logStatus:[KMPermissionManager unifyStatusForPermission:KMPermissionTypeHealth] forCategory:@"healthKit"];
+    }];
+}
+- (IBAction)onOpenSetting:(id)sender {
+    [KMPermissionManager openSettingsComplete:^(BOOL rst) {
+        NSLog(@"open setting:%@",@(rst));
     }];
 }
 

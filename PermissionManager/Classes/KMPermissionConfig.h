@@ -52,9 +52,13 @@ typedef NS_ENUM(NSInteger, KMLocationType) {
 @interface KMPermissionConfig (health)
 
 /// 健康权限类型
-+ (void)setObjectTypes:(NSSet<HKObjectType *> *)types;
++ (void)setReadTypes:(NSSet<HKObjectType *> *)types;
 
-+ (NSSet<HKObjectType *> *)objectTypes;
++ (NSSet<HKObjectType *> *)readTypes;
+
++ (void)setShareTypes:(NSSet<HKSampleType *> *)shareTypes;
+
++ (NSSet<HKSampleType *> *)shareTypes;
 
 @end
 

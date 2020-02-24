@@ -12,8 +12,8 @@
 @implementation KMHealthPermission
 
 + (HKAuthorizationStatus)status {
-    HKObjectType *type = [KMPermissionConfig objectTypes].anyObject;
-    HKAuthorizationStatus st = [[HKHealthStore new] authorizationStatusForType:type];
+    HKObjectType *readType = [KMPermissionConfig readTypes].anyObject;
+    HKAuthorizationStatus st = [[HKHealthStore new] authorizationStatusForType:readType];
     return st;
 }
 
@@ -54,9 +54,10 @@
 
 /// 请求权限
 + (void)requestPermission:(KMPermissionConfig *)config complete:(KMPermissionResult)completion {
-    NSSet<HKObjectType *> *types = [KMPermissionConfig objectTypes];
+    NSSet<HKObjectType *> *readTypes = [KMPermissionConfig readTypes];
+    NSSet<HKSampleType *> *shareTypes = [KMPermissionConfig shareTypes];
     HKHealthStore *store = [HKHealthStore new];
-    [store requestAuthorizationToShareTypes:types readTypes:types completion:^(BOOL success, NSError * _Nullable error) {
+    [store requestAuthorizationToShareTypes:shareTypes readTypes:readTypes completion:^(BOOL success, NSError * _Nullable error) {
         if (completion) {
             completion(success);
         }

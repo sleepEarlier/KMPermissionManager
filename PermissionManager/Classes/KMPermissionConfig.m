@@ -58,15 +58,24 @@
 
 @end
 
-static NSSet<HKObjectType *> *objTypes = nil;
+static NSSet<HKObjectType *> *readTypes = nil;
+static NSSet<HKSampleType *> *shareTypes = nil;
 @implementation KMPermissionConfig (health)
 
-+ (void)setObjectTypes:(NSSet<HKObjectType *> *)types {
-    objTypes = types;
++ (void)setReadTypes:(NSSet<HKObjectType *> *)types {
+    readTypes = types.copy;
 }
 
-+ (NSSet<HKObjectType *> *)objectTypes {
-    return objTypes;
++ (NSSet<HKObjectType *> *)readTypes {
+    return readTypes;
+}
+
++ (void)setShareTypes:(NSSet<HKSampleType *> *)types {
+    shareTypes = types.copy;
+}
+
++ (NSSet<HKSampleType *> *)shareTypes {
+    return shareTypes;
 }
 
 @end

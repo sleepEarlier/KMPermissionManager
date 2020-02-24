@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="whP-gf-Uak">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="whP-gf-Uak">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -23,52 +23,59 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fa9-P7-z69">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="95.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="83.5"/>
                                         <state key="normal" title="相机"/>
                                         <connections>
                                             <action selector="onCamera:" destination="whP-gf-Uak" eventType="touchUpInside" id="7Fs-4q-uhL"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q86-AY-cFM">
-                                        <rect key="frame" x="0.0" y="95.5" width="375" height="95"/>
+                                        <rect key="frame" x="0.0" y="83.5" width="375" height="83.5"/>
                                         <state key="normal" title="相册"/>
                                         <connections>
                                             <action selector="onAlbum:" destination="whP-gf-Uak" eventType="touchUpInside" id="JBg-vL-8ps"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WpO-8h-Ra8">
-                                        <rect key="frame" x="0.0" y="190.5" width="375" height="95.5"/>
+                                        <rect key="frame" x="0.0" y="167" width="375" height="83"/>
                                         <state key="normal" title="定位"/>
                                         <connections>
                                             <action selector="onLocate:" destination="whP-gf-Uak" eventType="touchUpInside" id="3qs-Xt-9AO"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KH5-gE-oYC">
-                                        <rect key="frame" x="0.0" y="286" width="375" height="95"/>
+                                        <rect key="frame" x="0.0" y="250" width="375" height="83.5"/>
                                         <state key="normal" title="通讯录"/>
                                         <connections>
                                             <action selector="onContact:" destination="whP-gf-Uak" eventType="touchUpInside" id="SO5-RM-xm5"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kWF-X4-kPW">
-                                        <rect key="frame" x="0.0" y="381" width="375" height="95.5"/>
+                                        <rect key="frame" x="0.0" y="333.5" width="375" height="83.5"/>
                                         <state key="normal" title="麦克风"/>
                                         <connections>
                                             <action selector="onMicrophone:" destination="whP-gf-Uak" eventType="touchUpInside" id="tdb-aG-1Su"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oes-Yr-jRM">
-                                        <rect key="frame" x="0.0" y="476.5" width="375" height="95"/>
+                                        <rect key="frame" x="0.0" y="417" width="375" height="83.5"/>
                                         <state key="normal" title="推送"/>
                                         <connections>
                                             <action selector="onPush:" destination="whP-gf-Uak" eventType="touchUpInside" id="iTh-Xq-FnR"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SwT-YW-Qyp">
-                                        <rect key="frame" x="0.0" y="571.5" width="375" height="95.5"/>
+                                        <rect key="frame" x="0.0" y="500.5" width="375" height="83"/>
                                         <state key="normal" title="健康"/>
                                         <connections>
                                             <action selector="onHealth:" destination="whP-gf-Uak" eventType="touchUpInside" id="5Y4-kM-5o2"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IIV-Ua-E7m">
+                                        <rect key="frame" x="0.0" y="583.5" width="375" height="83.5"/>
+                                        <state key="normal" title="打开设置"/>
+                                        <connections>
+                                            <action selector="onOpenSetting:" destination="whP-gf-Uak" eventType="touchUpInside" id="qVE-e7-8tF"/>
                                         </connections>
                                     </button>
                                 </subviews>
