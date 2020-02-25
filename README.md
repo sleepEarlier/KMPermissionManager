@@ -23,6 +23,8 @@
 | PhotoLibray  | ✅       |
 | Camera       | ✅       |
 
+CellularData Monitor is supported.
+
 Provide unify request method and permission status.
 
 ## Example
