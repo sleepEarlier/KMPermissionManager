@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "KMPermissionConfig.h"
+#import <CoreTelephony/CTCellularData.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -41,6 +42,16 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// 原始权限状态值
 + (NSInteger)rawStatusForPermission:(KMPermissionType)type;
+
+/// 开始监听蜂窝煤数据权限变化，变化时会发出`KMCellularDataPermissionDidChangedNotification`通知
+/// 可通过UserInfo中的KMCellularDataRestrictedStateUserInfoKey获取状态值
++ (void)startMonitorCellularDataPermissionChanged;
+
+/// 停止监听蜂窝煤数据权限变化
++ (void)stopMonitorCellularDataPermissionChanged;
+
+/// 获取当前蜂窝数据权限（需先开始监听才能返回正确的状态）
++ (CTCellularDataRestrictedState)cellularDataRestrictedState;
 
 @end
 NS_ASSUME_NONNULL_END

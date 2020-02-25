@@ -18,6 +18,10 @@
 #import "KMRemindersPermission.h"
 #import "KMCalandarPermission.h"
 
+NSString * const KMCellularDataPermissionDidChangedNotification = @"KMCellularDataPermissionDidChangedNotification";
+NSString * const KMCellularDataRestrictedStateUserInfoKey = @"KMCellularDataRestrictedStateUserInfoKey";
+static id staticCellularData = nil;
+
 @implementation KMPermissionManager
 
 #pragma mark - API
@@ -56,6 +60,35 @@
 
 + (NSInteger)rawStatusForPermission:(KMPermissionType)type {
     return [[self classForType:type] rawStatusForPermission:type];
+}
+
+// 开始监听蜂窝网络数据权限变化
++ (void)startMonitorCellularDataPermissionChanged {
+    
+    if (@available(iOS 9, *)) {
+        staticCellularData = [[CTCellularData alloc] init];
+        CTCellularData *cellular = staticCellularData;
+        cellular.cellularDataRestrictionDidUpdateNotifier = ^(CTCellularDataRestrictedState state) {
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [NSNotificationCenter.defaultCenter postNotificationName:KMCellularDataPermissionDidChangedNotification object:@(state) userInfo:@{KMCellularDataRestrictedStateUserInfoKey: @(state)}];
+            });
+        };
+    }
+}
+
+// 停止监听蜂窝网络数据权限变化
++ (void)stopMonitorCellularDataPermissionChanged {
+    ((CTCellularData *)staticCellularData).cellularDataRestrictionDidUpdateNotifier = nil;
+    staticCellularData = nil;
+}
+
++ (CTCellularDataRestrictedState)cellularDataRestrictedState {
+    
+    if (@available(iOS 9, *)) {
+        return ((CTCellularData *)staticCellularData).restrictedState;
+    } else {
+        return kCTCellularDataNotRestricted;
+    }
 }
 
 #pragma mark - Help

@@ -8,6 +8,10 @@
 #ifndef KMPermissionDefine_h
 #define KMPermissionDefine_h
 
+/// 蜂窝网络数据权限改变通知
+extern NSString * const KMCellularDataPermissionDidChangedNotification;
+extern NSString * const KMCellularDataRestrictedStateUserInfoKey;
+
 typedef NS_ENUM(NSInteger, KMPermissionType) {
     KMPermissionTypeCamera,
     KMPermissionTypePhotoLibray,
