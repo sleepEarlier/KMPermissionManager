@@ -7,46 +7,48 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		107AC347AB84CA547616E437335CF55E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48EB874B7E0A73C0D14A841BBC0153B8 /* CoreLocation.framework */; };
-		18E03012BB06908D4AEF953BE2B12962 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29CA0A03A0987911F4BDA8ADFDB167F4 /* Photos.framework */; };
-		192B68B49C373BF3808270C59F69A7C8 /* KMPermissionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3310C4F437E96E0C9B1531EBB88827C2 /* KMPermissionManager.m */; };
-		1C80D8366397624D32D384CBBE93B025 /* KMCameraPermission.m in Sources */ = {isa = PBXBuildFile; fileRef = 7800EFE5E9F057277ADE3669627E1627 /* KMCameraPermission.m */; };
-		1DE7DF7B11BF808F63023A515D052BED /* KMLocationPermission.h in Headers */ = {isa = PBXBuildFile; fileRef = D86F89974AB5A404A642B18DC42B59D2 /* KMLocationPermission.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		29374A30A3C9F54B5C72E67B12C285AA /* KMContactsPermission.h in Headers */ = {isa = PBXBuildFile; fileRef = D2A4813B0166FFE31553869A954D1676 /* KMContactsPermission.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2BAEADD6C9FF310EE4F5895FF02BCCD5 /* KMPhotoLibrayPermission.m in Sources */ = {isa = PBXBuildFile; fileRef = 560627180044AC146B4ECA951CC07E1F /* KMPhotoLibrayPermission.m */; };
-		35873EA6826F59068CADAEBA4DE84F84 /* KMPermissionManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FF73B9FCF220339733EBBA34E1FF876A /* KMPermissionManager-dummy.m */; };
-		35A6B44D27DBA069EAEB6CB4418EE606 /* KMMicrophonePermission.h in Headers */ = {isa = PBXBuildFile; fileRef = 45E2761BF3CD224415C55A169EEA6CA6 /* KMMicrophonePermission.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3CC4F8FB59F5840A8D580D882DE5845D /* KMHealthPermission.m in Sources */ = {isa = PBXBuildFile; fileRef = 8389958025E199E52CFDACC3DB103E29 /* KMHealthPermission.m */; };
-		3F4E8C830563CD8F61D9539A960460D1 /* KMRemindersPermission.m in Sources */ = {isa = PBXBuildFile; fileRef = CF68BFC94A899A4A11DFD787C00CE90D /* KMRemindersPermission.m */; };
-		41737E9C5FE56374826B8C79DDB8380B /* KMMicrophonePermission.m in Sources */ = {isa = PBXBuildFile; fileRef = D5A051C92C4B9819DDED36E74BB7CAAF /* KMMicrophonePermission.m */; };
-		41EF129664FEBCEFBEDD31D32BF4E49E /* KMNotificationPermission.m in Sources */ = {isa = PBXBuildFile; fileRef = C316112D140BC6A73FE6D86B99451AC5 /* KMNotificationPermission.m */; };
-		495951CD9B2E43EC5F53740AD6738BED /* KMLocationPermission.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B48BF53592816BCAADFDDD4462DB820 /* KMLocationPermission.m */; };
-		4A45D04127B66B2F4CD0BFA01BA7DAE7 /* Contacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48865B98CA8EFE14BF62B2B265F341FC /* Contacts.framework */; };
-		4BDEF7A7A25747DC94D0C452E23FFA29 /* KMHealthPermission.h in Headers */ = {isa = PBXBuildFile; fileRef = 91033F197980860AD84339536FE536E7 /* KMHealthPermission.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0255528F91D3862DC49A084D3427AE1A /* KMRemindersPermission.m in Sources */ = {isa = PBXBuildFile; fileRef = 0770F0E323C4C62EFE2EECE495A6CC5B /* KMRemindersPermission.m */; };
+		07297D67EADA223A9BB3B25809327079 /* KMMicrophonePermission.m in Sources */ = {isa = PBXBuildFile; fileRef = B4508DA5E255CD60D1C2591977E8E9E2 /* KMMicrophonePermission.m */; };
+		0B30A5C5431E42FF48CB16E662C6CE83 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C5E973CAD7ED1B8D0135A092FD56C3A /* HealthKit.framework */; };
+		0DB4E0494102E9A5E4F553E76960CD3A /* KMNotificationPermission.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D283C96F1C82164AD778050095B0D10 /* KMNotificationPermission.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1139A0D787B8B765E708FF22C06448B5 /* KMPermissionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DD2F1BF4C51F560F1E9DC8D72495DB0 /* KMPermissionManager.m */; };
+		150CF4081A35ADB0A621B5163061447A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3D3F1A6075CA9A420D04867864E44B6 /* UIKit.framework */; };
+		27C469C29C1A1BD78D0AF124A8533736 /* KMCameraPermission.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F823D83CD67B7DEF1392EEC6191D0B3 /* KMCameraPermission.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2B9F565510ED839BF9E258509F438019 /* KMMicrophonePermission.h in Headers */ = {isa = PBXBuildFile; fileRef = 6249205DF61826DE39C6231468014819 /* KMMicrophonePermission.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FA7545EE4C01BE834D6C57985AF8F45 /* KMPhotoLibrayPermission.m in Sources */ = {isa = PBXBuildFile; fileRef = 088D4644F8626ABDF88825192C9A176F /* KMPhotoLibrayPermission.m */; };
+		2FEB34F6A4E194FCF11F429CD7FDAE02 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04A3D7C7A905F443E69C6875FE93170B /* Foundation.framework */; };
+		368BF69DAAD1F5435ED74C049E7B4ADC /* KMPermissionProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 49E67543487F14F15E6F060DB0FA8540 /* KMPermissionProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B682DAB1620B2FDA071A43F38CF7D38 /* KMHealthPermission.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AEB6C834DC3669F4F28151D866552A6 /* KMHealthPermission.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3F9CCB4DA9ABDFFCBB19BEB6509216C4 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48EB874B7E0A73C0D14A841BBC0153B8 /* CoreLocation.framework */; };
+		4640F2ECC701DB07751B011041E9BA29 /* KMContactsPermission.h in Headers */ = {isa = PBXBuildFile; fileRef = 286DFC0EC8401B9AE9FE0638A825D552 /* KMContactsPermission.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		50CDFC26BB4A8FEF4B1111164E91E193 /* KMCalandarPermission.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC85501E7D8EDEB7705ED31F05C2672 /* KMCalandarPermission.m */; };
 		50D5C6C361AE22FE3F82504A430737B5 /* Pods-PermissionManager_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC532DA9A729D02974D02D43586712D /* Pods-PermissionManager_Example-dummy.m */; };
-		6DF04D955EEDDFD4349540D80104E046 /* KMContactsPermission.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B6024D1D6AB730660883788C0499B0 /* KMContactsPermission.m */; };
-		6E1A71060F780A4460BC7B1B80FAA40C /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C5E973CAD7ED1B8D0135A092FD56C3A /* HealthKit.framework */; };
-		735A273C1341F8AFF3A693A89B78C861 /* KMCalandarPermission.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FA13079EABF2AB37F1A3F3D431A1766 /* KMCalandarPermission.m */; };
+		547ECAD30CDDBD6E1DD108EA384AC39D /* Contacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48865B98CA8EFE14BF62B2B265F341FC /* Contacts.framework */; };
+		5B6C7EF98D73B45EF2FA254C000E823E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BE593E8E5ADCFA7BFD7AFE66E513FDE /* AVFoundation.framework */; };
+		6026118BDD926545552E8A96136443E7 /* KMCameraPermission.m in Sources */ = {isa = PBXBuildFile; fileRef = D4924687B14BAB3ADADB60DCA36A7EBE /* KMCameraPermission.m */; };
+		6478C63CFA66FC625258B6506AAF023B /* KMPermissionManager-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 66C1139064EB3EF87365F8786211A931 /* KMPermissionManager-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		650B18B9647D048A1D145FE4F94AE57B /* KMRemindersPermission.h in Headers */ = {isa = PBXBuildFile; fileRef = C21B65A02BB36D971B30E8E416A30B46 /* KMRemindersPermission.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		76A297DEB261158D8F1914F62B9A22F0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04A3D7C7A905F443E69C6875FE93170B /* Foundation.framework */; };
-		7EC5B10695EE763077B5C9D0C7066131 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63A3CECBDA68392191EA443D00C6C3F /* CoreTelephony.framework */; };
-		84F89CEECDEFBA6DE664CE5A4B7B60CD /* KMPermissionManager-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B34C4840FBCC4CB1D92D5DFFE120835F /* KMPermissionManager-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		79369AE1FACCCA96D39030E71177BD73 /* KMPermissionConfig+extend.m in Sources */ = {isa = PBXBuildFile; fileRef = EFBA1957A8142803C5BCB710E607DAA4 /* KMPermissionConfig+extend.m */; };
+		7EA9C56D4848F92D3DDC2F89BA74F6F7 /* KMPermissionConfig+extend.h in Headers */ = {isa = PBXBuildFile; fileRef = D6FCC1C6A1D33FD8986D5DB26AA01620 /* KMPermissionConfig+extend.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8309D83D19C0272294FC92EF518C982F /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63A3CECBDA68392191EA443D00C6C3F /* CoreTelephony.framework */; };
 		87D1A0887304C3380F6E43BDCC1A07E6 /* Pods-PermissionManager_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AF7B5B8E707D4F548AE627403B2E0F18 /* Pods-PermissionManager_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8F5806D431AD2195F67C396282C1FDB1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04A3D7C7A905F443E69C6875FE93170B /* Foundation.framework */; };
-		965729BE80E08517B06B4ECE06418362 /* KMPermissionConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = F968AAB8A97592BB381B51E683A7F014 /* KMPermissionConfig.m */; };
-		A02567373FFE8739FC94CA3AFD22BF6E /* KMPermissionDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = 322187C93B9D00C969834FDE1483E8B9 /* KMPermissionDefine.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A6B8505AA141AF6D76BE6FCCA706784B /* KMPermissionProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = BCA0571B2EA0C83DD7FFA02816DDCFAF /* KMPermissionProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8CFFE539E63A2D7FB8AC11780A0C1134 /* KMPermissionManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 46A48A1CFE49F74743A76F5B46FE592D /* KMPermissionManager-dummy.m */; };
+		9654963D6635F0C4E28E9FA0E98950B5 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29CA0A03A0987911F4BDA8ADFDB167F4 /* Photos.framework */; };
+		A881452FB885414E4B7006767FC1CB48 /* KMPermissionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 83B47126452A754D75D683C42939AB88 /* KMPermissionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A91A02C689E4C07A727A7A93C20854BB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04A3D7C7A905F443E69C6875FE93170B /* Foundation.framework */; };
-		ACF586300E2818B4ABBE25A2D78B57CE /* KMNotificationPermission.h in Headers */ = {isa = PBXBuildFile; fileRef = 06EAC2D222F0851B7D845BA90ED10731 /* KMNotificationPermission.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AD72AA413686E4A96FC1D40743891F55 /* KMPhotoLibrayPermission.h in Headers */ = {isa = PBXBuildFile; fileRef = 8808B458B2768944518E5BD8D836FF33 /* KMPhotoLibrayPermission.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B3805DA667311D0B6D1753AA6234B8DC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3D3F1A6075CA9A420D04867864E44B6 /* UIKit.framework */; };
-		B3B13C8B537A844E92ADCF37FA0FC802 /* KMPermissionConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 224620F566C5E89612CC961F670948B2 /* KMPermissionConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ABCFA444A281385D50583A1A141AAE63 /* KMLocationPermission.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FC8C893D85F7B08F9157BD58F032CE5 /* KMLocationPermission.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B8EFE19D9C08185CF27FE1B00E86C679 /* KMHealthPermission.m in Sources */ = {isa = PBXBuildFile; fileRef = 61507813B0D8011D32E4954FE96452DE /* KMHealthPermission.m */; };
+		BA936C8AD070836DEFB85834C323FBF2 /* KMPermissionConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A9D4A4590C4DEA35711B76169E9DFCB /* KMPermissionConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BD3BD9CB4F91FD5ACCAD8DFC287FF82D /* Pods-PermissionManager_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D0AEDCCEA54C7416889B3FB95F8BBA8E /* Pods-PermissionManager_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C9A281B844ED5F92215B99649378D407 /* KMRemindersPermission.h in Headers */ = {isa = PBXBuildFile; fileRef = 19CB62086ED7BF7A78BA46888F4E8668 /* KMRemindersPermission.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D5FAA7FEA984CA6D9E8C613E5FDDABAC /* KMPermissionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 429A4567754218D145A23C3623079177 /* KMPermissionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D93D02BF449037DCF4FE651D26F623AA /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BE593E8E5ADCFA7BFD7AFE66E513FDE /* AVFoundation.framework */; };
+		BD979E7F45C9E0131045ED3E92BE15D2 /* KMCalandarPermission.h in Headers */ = {isa = PBXBuildFile; fileRef = 38517505ADD58A2F970B7E3E25402DA6 /* KMCalandarPermission.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CC3E2E492A7D48EB4FABB16BB35B964A /* KMPermissionConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = BBA21D09F8B538E12B4301CE504B3405 /* KMPermissionConfig.m */; };
+		D75955A4D44CE3106357947958EE4AA4 /* KMPhotoLibrayPermission.h in Headers */ = {isa = PBXBuildFile; fileRef = 9949FF8F297BF38DD9E5FE847914B502 /* KMPhotoLibrayPermission.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DE07FA279B8473AED8A34B951703AF47 /* KMContactsPermission.m in Sources */ = {isa = PBXBuildFile; fileRef = E678AB064471847462DE6B4DF8609F1C /* KMContactsPermission.m */; };
 		EEE25870F5CB907E060F43621B2AAB70 /* Pods-PermissionManager_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A1AD562AE90A3778777064418300ED52 /* Pods-PermissionManager_Tests-dummy.m */; };
-		F1F024FFC80B355DB6BDE587F2839BF7 /* KMCameraPermission.h in Headers */ = {isa = PBXBuildFile; fileRef = 062B8C53F7D67CD3689BABBA104EB940 /* KMCameraPermission.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F56141E0BC0471DC57C82D52A101ECAC /* KMCalandarPermission.h in Headers */ = {isa = PBXBuildFile; fileRef = 2765DB0AAD7AC15E4573C7C7B5827EEA /* KMCalandarPermission.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F6DB0930FAB4140BF9BF9CB16E9A4E16 /* KMNotificationPermission.m in Sources */ = {isa = PBXBuildFile; fileRef = F40FAC80C04EC38419347F67A711A777 /* KMNotificationPermission.m */; };
+		F9EFA493A3498FB4601E20916338002B /* KMPermissionDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = 48570A86294CB79BDFC67D81C9DD7329 /* KMPermissionDefine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FB139A4584403727C96B81BC79091DCA /* KMLocationPermission.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D0013167E13294CC3BDCD8741EC22EA /* KMLocationPermission.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,90 +70,92 @@
 
 /* Begin PBXFileReference section */
 		04A3D7C7A905F443E69C6875FE93170B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		062B8C53F7D67CD3689BABBA104EB940 /* KMCameraPermission.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KMCameraPermission.h; sourceTree = "<group>"; };
-		06EAC2D222F0851B7D845BA90ED10731 /* KMNotificationPermission.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KMNotificationPermission.h; sourceTree = "<group>"; };
+		0770F0E323C4C62EFE2EECE495A6CC5B /* KMRemindersPermission.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = KMRemindersPermission.m; sourceTree = "<group>"; };
+		088D4644F8626ABDF88825192C9A176F /* KMPhotoLibrayPermission.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = KMPhotoLibrayPermission.m; sourceTree = "<group>"; };
 		0C5E973CAD7ED1B8D0135A092FD56C3A /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
 		157849A449F5F1F73E0F7DA7D6A795ED /* Pods-PermissionManager_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PermissionManager_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		19CB62086ED7BF7A78BA46888F4E8668 /* KMRemindersPermission.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KMRemindersPermission.h; sourceTree = "<group>"; };
 		1D95E469F59264BDD8CE88512AB9B1A3 /* Pods_PermissionManager_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PermissionManager_Example.framework; path = "Pods-PermissionManager_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		224620F566C5E89612CC961F670948B2 /* KMPermissionConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KMPermissionConfig.h; path = PermissionManager/Classes/KMPermissionConfig.h; sourceTree = "<group>"; };
 		22FD96E49A4EAF5274138BD83DB2449C /* Pods-PermissionManager_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PermissionManager_Example.release.xcconfig"; sourceTree = "<group>"; };
-		261B44E8AEB0B900D644BE8B5CFADA06 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		2765DB0AAD7AC15E4573C7C7B5827EEA /* KMCalandarPermission.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KMCalandarPermission.h; sourceTree = "<group>"; };
+		286DFC0EC8401B9AE9FE0638A825D552 /* KMContactsPermission.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KMContactsPermission.h; sourceTree = "<group>"; };
+		29490E44F9077804C3EC45231E632485 /* KMPermissionManager-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "KMPermissionManager-Info.plist"; sourceTree = "<group>"; };
 		29CA0A03A0987911F4BDA8ADFDB167F4 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Photos.framework; sourceTree = DEVELOPER_DIR; };
+		2AC85501E7D8EDEB7705ED31F05C2672 /* KMCalandarPermission.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = KMCalandarPermission.m; sourceTree = "<group>"; };
 		2B01E166B25D357836F62ED4235FD484 /* Pods-PermissionManager_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PermissionManager_Tests.modulemap"; sourceTree = "<group>"; };
-		322187C93B9D00C969834FDE1483E8B9 /* KMPermissionDefine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KMPermissionDefine.h; sourceTree = "<group>"; };
-		3310C4F437E96E0C9B1531EBB88827C2 /* KMPermissionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KMPermissionManager.m; path = PermissionManager/Classes/KMPermissionManager.m; sourceTree = "<group>"; };
+		2D0013167E13294CC3BDCD8741EC22EA /* KMLocationPermission.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = KMLocationPermission.m; sourceTree = "<group>"; };
+		38517505ADD58A2F970B7E3E25402DA6 /* KMCalandarPermission.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KMCalandarPermission.h; sourceTree = "<group>"; };
 		3AC532DA9A729D02974D02D43586712D /* Pods-PermissionManager_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PermissionManager_Example-dummy.m"; sourceTree = "<group>"; };
+		3D283C96F1C82164AD778050095B0D10 /* KMNotificationPermission.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KMNotificationPermission.h; sourceTree = "<group>"; };
 		3EC3BCB76402FB6B291682208F488077 /* Pods-PermissionManager_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PermissionManager_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		3FA13079EABF2AB37F1A3F3D431A1766 /* KMCalandarPermission.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = KMCalandarPermission.m; sourceTree = "<group>"; };
 		40518481B8BEE8504FD429704B527B3F /* Pods-PermissionManager_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PermissionManager_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		41179F0682172D4D21FF52198E5B4139 /* Pods-PermissionManager_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PermissionManager_Example.modulemap"; sourceTree = "<group>"; };
-		429A4567754218D145A23C3623079177 /* KMPermissionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KMPermissionManager.h; path = PermissionManager/Classes/KMPermissionManager.h; sourceTree = "<group>"; };
-		45E2761BF3CD224415C55A169EEA6CA6 /* KMMicrophonePermission.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KMMicrophonePermission.h; sourceTree = "<group>"; };
+		46A48A1CFE49F74743A76F5B46FE592D /* KMPermissionManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KMPermissionManager-dummy.m"; sourceTree = "<group>"; };
+		48570A86294CB79BDFC67D81C9DD7329 /* KMPermissionDefine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KMPermissionDefine.h; sourceTree = "<group>"; };
 		48865B98CA8EFE14BF62B2B265F341FC /* Contacts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Contacts.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Contacts.framework; sourceTree = DEVELOPER_DIR; };
 		48EB874B7E0A73C0D14A841BBC0153B8 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
-		491CCCFC0BA7DD49FE2CB8634E0B94F1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		49E67543487F14F15E6F060DB0FA8540 /* KMPermissionProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KMPermissionProtocol.h; sourceTree = "<group>"; };
+		4AEB6C834DC3669F4F28151D866552A6 /* KMHealthPermission.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KMHealthPermission.h; sourceTree = "<group>"; };
 		50790AAE00185C65D00F694FDB6149A7 /* Pods-PermissionManager_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PermissionManager_Example-Info.plist"; sourceTree = "<group>"; };
-		55D56EAB43ED67FDFEB71BB034BBD42F /* KMPermissionManager.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KMPermissionManager.xcconfig; sourceTree = "<group>"; };
-		560627180044AC146B4ECA951CC07E1F /* KMPhotoLibrayPermission.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = KMPhotoLibrayPermission.m; sourceTree = "<group>"; };
-		5A13E1AF4EF5B98C6283F5268545E2E8 /* KMPermissionManager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KMPermissionManager-prefix.pch"; sourceTree = "<group>"; };
+		5A9D4A4590C4DEA35711B76169E9DFCB /* KMPermissionConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KMPermissionConfig.h; path = PermissionManager/Classes/KMPermissionConfig.h; sourceTree = "<group>"; };
 		5F15646B616A847E8FAF9F7E4C8EFAED /* Pods-PermissionManager_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PermissionManager_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		654816028CC4E52D9F8057B7045D7D59 /* KMPermissionManager-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "KMPermissionManager-Info.plist"; sourceTree = "<group>"; };
-		6B48BF53592816BCAADFDDD4462DB820 /* KMLocationPermission.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = KMLocationPermission.m; sourceTree = "<group>"; };
-		77B6024D1D6AB730660883788C0499B0 /* KMContactsPermission.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = KMContactsPermission.m; sourceTree = "<group>"; };
-		7800EFE5E9F057277ADE3669627E1627 /* KMCameraPermission.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = KMCameraPermission.m; sourceTree = "<group>"; };
+		5F823D83CD67B7DEF1392EEC6191D0B3 /* KMCameraPermission.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KMCameraPermission.h; sourceTree = "<group>"; };
+		61507813B0D8011D32E4954FE96452DE /* KMHealthPermission.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = KMHealthPermission.m; sourceTree = "<group>"; };
+		6249205DF61826DE39C6231468014819 /* KMMicrophonePermission.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KMMicrophonePermission.h; sourceTree = "<group>"; };
+		66C1139064EB3EF87365F8786211A931 /* KMPermissionManager-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KMPermissionManager-umbrella.h"; sourceTree = "<group>"; };
+		7A3730EDC89B59D9775E9A6A86475D18 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		7B641C6337DBDDA5E8C34283B0966CB1 /* Pods-PermissionManager_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PermissionManager_Tests-Info.plist"; sourceTree = "<group>"; };
 		7BCFADB8F606089FF6D12666C07D2A82 /* Pods_PermissionManager_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PermissionManager_Tests.framework; path = "Pods-PermissionManager_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8389958025E199E52CFDACC3DB103E29 /* KMHealthPermission.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = KMHealthPermission.m; sourceTree = "<group>"; };
-		8808B458B2768944518E5BD8D836FF33 /* KMPhotoLibrayPermission.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KMPhotoLibrayPermission.h; sourceTree = "<group>"; };
+		83B47126452A754D75D683C42939AB88 /* KMPermissionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KMPermissionManager.h; path = PermissionManager/Classes/KMPermissionManager.h; sourceTree = "<group>"; };
 		8BE593E8E5ADCFA7BFD7AFE66E513FDE /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
-		91033F197980860AD84339536FE536E7 /* KMHealthPermission.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KMHealthPermission.h; sourceTree = "<group>"; };
+		9949FF8F297BF38DD9E5FE847914B502 /* KMPhotoLibrayPermission.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KMPhotoLibrayPermission.h; sourceTree = "<group>"; };
 		9AD5785E1AB49B48E8BA93141780F137 /* KMPermissionManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KMPermissionManager.framework; path = KMPermissionManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9DD2F1BF4C51F560F1E9DC8D72495DB0 /* KMPermissionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KMPermissionManager.m; path = PermissionManager/Classes/KMPermissionManager.m; sourceTree = "<group>"; };
+		9FC8C893D85F7B08F9157BD58F032CE5 /* KMLocationPermission.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KMLocationPermission.h; sourceTree = "<group>"; };
 		A1AD562AE90A3778777064418300ED52 /* Pods-PermissionManager_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PermissionManager_Tests-dummy.m"; sourceTree = "<group>"; };
+		A4F5D41ABAC6DF4C04E0BC6DDF81E480 /* KMPermissionManager.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = KMPermissionManager.modulemap; sourceTree = "<group>"; };
+		A9CD8A32CDE7B33649C97516B006D3A3 /* KMPermissionManager.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KMPermissionManager.xcconfig; sourceTree = "<group>"; };
 		AF7B5B8E707D4F548AE627403B2E0F18 /* Pods-PermissionManager_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PermissionManager_Example-umbrella.h"; sourceTree = "<group>"; };
-		B34C4840FBCC4CB1D92D5DFFE120835F /* KMPermissionManager-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KMPermissionManager-umbrella.h"; sourceTree = "<group>"; };
 		B3D3F1A6075CA9A420D04867864E44B6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		B4508DA5E255CD60D1C2591977E8E9E2 /* KMMicrophonePermission.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = KMMicrophonePermission.m; sourceTree = "<group>"; };
 		B63A3CECBDA68392191EA443D00C6C3F /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreTelephony.framework; sourceTree = DEVELOPER_DIR; };
 		B79CD358E5BCC874B64AD2BC08E957FC /* Pods-PermissionManager_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PermissionManager_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B917FDF52348F1A270B1147A440F3785 /* KMPermissionManager.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = KMPermissionManager.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B9D4EAE6AA49700AC8A84680D6700C96 /* Pods-PermissionManager_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PermissionManager_Example-frameworks.sh"; sourceTree = "<group>"; };
-		BCA0571B2EA0C83DD7FFA02816DDCFAF /* KMPermissionProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KMPermissionProtocol.h; sourceTree = "<group>"; };
-		C316112D140BC6A73FE6D86B99451AC5 /* KMNotificationPermission.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = KMNotificationPermission.m; sourceTree = "<group>"; };
+		BBA21D09F8B538E12B4301CE504B3405 /* KMPermissionConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KMPermissionConfig.m; path = PermissionManager/Classes/KMPermissionConfig.m; sourceTree = "<group>"; };
+		C21B65A02BB36D971B30E8E416A30B46 /* KMRemindersPermission.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KMRemindersPermission.h; sourceTree = "<group>"; };
 		CB4048A58677B8E7A92AC00202276F91 /* Pods-PermissionManager_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PermissionManager_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		CF68BFC94A899A4A11DFD787C00CE90D /* KMRemindersPermission.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = KMRemindersPermission.m; sourceTree = "<group>"; };
 		D0AEDCCEA54C7416889B3FB95F8BBA8E /* Pods-PermissionManager_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PermissionManager_Tests-umbrella.h"; sourceTree = "<group>"; };
-		D2A4813B0166FFE31553869A954D1676 /* KMContactsPermission.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KMContactsPermission.h; sourceTree = "<group>"; };
-		D5A051C92C4B9819DDED36E74BB7CAAF /* KMMicrophonePermission.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = KMMicrophonePermission.m; sourceTree = "<group>"; };
-		D86F89974AB5A404A642B18DC42B59D2 /* KMLocationPermission.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KMLocationPermission.h; sourceTree = "<group>"; };
-		D88ECEB5BE5A45D804F179F71EAB2AD4 /* KMPermissionManager.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = KMPermissionManager.modulemap; sourceTree = "<group>"; };
-		E7BA99913A2F4EDAAC1D29C693F797AE /* KMPermissionManager.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = KMPermissionManager.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		D4924687B14BAB3ADADB60DCA36A7EBE /* KMCameraPermission.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = KMCameraPermission.m; sourceTree = "<group>"; };
+		D564BB1E3E861EB9A99B2D99F1B2FA6F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		D6FCC1C6A1D33FD8986D5DB26AA01620 /* KMPermissionConfig+extend.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "KMPermissionConfig+extend.h"; path = "PermissionManager/Classes/KMPermissionConfig+extend.h"; sourceTree = "<group>"; };
+		E678AB064471847462DE6B4DF8609F1C /* KMContactsPermission.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = KMContactsPermission.m; sourceTree = "<group>"; };
+		EF8ACFD74F088FF037184DACC53C8D39 /* KMPermissionManager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KMPermissionManager-prefix.pch"; sourceTree = "<group>"; };
+		EFBA1957A8142803C5BCB710E607DAA4 /* KMPermissionConfig+extend.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "KMPermissionConfig+extend.m"; path = "PermissionManager/Classes/KMPermissionConfig+extend.m"; sourceTree = "<group>"; };
+		F40FAC80C04EC38419347F67A711A777 /* KMNotificationPermission.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = KMNotificationPermission.m; sourceTree = "<group>"; };
 		F7D74348934ADF95ED130D2422DA5661 /* Pods-PermissionManager_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PermissionManager_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		F968AAB8A97592BB381B51E683A7F014 /* KMPermissionConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KMPermissionConfig.m; path = PermissionManager/Classes/KMPermissionConfig.m; sourceTree = "<group>"; };
-		FF73B9FCF220339733EBBA34E1FF876A /* KMPermissionManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KMPermissionManager-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		9C3B6ABC17C234532FD80CCF8D00EE29 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D93D02BF449037DCF4FE651D26F623AA /* AVFoundation.framework in Frameworks */,
-				4A45D04127B66B2F4CD0BFA01BA7DAE7 /* Contacts.framework in Frameworks */,
-				107AC347AB84CA547616E437335CF55E /* CoreLocation.framework in Frameworks */,
-				7EC5B10695EE763077B5C9D0C7066131 /* CoreTelephony.framework in Frameworks */,
-				8F5806D431AD2195F67C396282C1FDB1 /* Foundation.framework in Frameworks */,
-				6E1A71060F780A4460BC7B1B80FAA40C /* HealthKit.framework in Frameworks */,
-				18E03012BB06908D4AEF953BE2B12962 /* Photos.framework in Frameworks */,
-				B3805DA667311D0B6D1753AA6234B8DC /* UIKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		B2E4648CE3CC74B6BBCEF88E45B74FF9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				76A297DEB261158D8F1914F62B9A22F0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9D9F8CFE2F1FA2383AEB89785BB7B59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B6C7EF98D73B45EF2FA254C000E823E /* AVFoundation.framework in Frameworks */,
+				547ECAD30CDDBD6E1DD108EA384AC39D /* Contacts.framework in Frameworks */,
+				3F9CCB4DA9ABDFFCBB19BEB6509216C4 /* CoreLocation.framework in Frameworks */,
+				8309D83D19C0272294FC92EF518C982F /* CoreTelephony.framework in Frameworks */,
+				2FEB34F6A4E194FCF11F429CD7FDAE02 /* Foundation.framework in Frameworks */,
+				0B30A5C5431E42FF48CB16E662C6CE83 /* HealthKit.framework in Frameworks */,
+				9654963D6635F0C4E28E9FA0E98950B5 /* Photos.framework in Frameworks */,
+				150CF4081A35ADB0A621B5163061447A /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,6 +170,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		046D4F1786467E6779D76B9EC5281C73 /* KMPermissionManager */ = {
+			isa = PBXGroup;
+			children = (
+				5A9D4A4590C4DEA35711B76169E9DFCB /* KMPermissionConfig.h */,
+				BBA21D09F8B538E12B4301CE504B3405 /* KMPermissionConfig.m */,
+				D6FCC1C6A1D33FD8986D5DB26AA01620 /* KMPermissionConfig+extend.h */,
+				EFBA1957A8142803C5BCB710E607DAA4 /* KMPermissionConfig+extend.m */,
+				83B47126452A754D75D683C42939AB88 /* KMPermissionManager.h */,
+				9DD2F1BF4C51F560F1E9DC8D72495DB0 /* KMPermissionManager.m */,
+				3601714117D2A2C06D2543936D3D1A8F /* Define */,
+				A84C7A242D1BA1FC3920A46F0688D57E /* Permission */,
+				4A4FB1F5B33019CAC30F5CE31EDB375A /* Pod */,
+				51747B2D21B3F3E4A511C7F04FF50900 /* Support Files */,
+			);
+			name = KMPermissionManager;
+			path = ../..;
+			sourceTree = "<group>";
+		};
 		208565EFDD74D6C3444CBE6D1B893F89 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -176,14 +198,38 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4881BCBB62795F019E0FABD1BA76FFEE /* Define */ = {
+		3601714117D2A2C06D2543936D3D1A8F /* Define */ = {
 			isa = PBXGroup;
 			children = (
-				322187C93B9D00C969834FDE1483E8B9 /* KMPermissionDefine.h */,
-				BCA0571B2EA0C83DD7FFA02816DDCFAF /* KMPermissionProtocol.h */,
+				48570A86294CB79BDFC67D81C9DD7329 /* KMPermissionDefine.h */,
+				49E67543487F14F15E6F060DB0FA8540 /* KMPermissionProtocol.h */,
 			);
 			name = Define;
 			path = PermissionManager/Classes/Define;
+			sourceTree = "<group>";
+		};
+		4A4FB1F5B33019CAC30F5CE31EDB375A /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				B917FDF52348F1A270B1147A440F3785 /* KMPermissionManager.podspec */,
+				D564BB1E3E861EB9A99B2D99F1B2FA6F /* LICENSE */,
+				7A3730EDC89B59D9775E9A6A86475D18 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		51747B2D21B3F3E4A511C7F04FF50900 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A4F5D41ABAC6DF4C04E0BC6DDF81E480 /* KMPermissionManager.modulemap */,
+				A9CD8A32CDE7B33649C97516B006D3A3 /* KMPermissionManager.xcconfig */,
+				46A48A1CFE49F74743A76F5B46FE592D /* KMPermissionManager-dummy.m */,
+				29490E44F9077804C3EC45231E632485 /* KMPermissionManager-Info.plist */,
+				EF8ACFD74F088FF037184DACC53C8D39 /* KMPermissionManager-prefix.pch */,
+				66C1139064EB3EF87365F8786211A931 /* KMPermissionManager-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/KMPermissionManager";
 			sourceTree = "<group>";
 		};
 		527C435D5B1FEEB06999E938643386D7 /* iOS */ = {
@@ -218,65 +264,27 @@
 			path = "Target Support Files/Pods-PermissionManager_Example";
 			sourceTree = "<group>";
 		};
-		8FE181936D6BF7306DF86E79CFB1FB0D /* Development Pods */ = {
+		A84C7A242D1BA1FC3920A46F0688D57E /* Permission */ = {
 			isa = PBXGroup;
 			children = (
-				9BD09A4C749BF4FEF63FD0EFB180B4AA /* KMPermissionManager */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		9BD09A4C749BF4FEF63FD0EFB180B4AA /* KMPermissionManager */ = {
-			isa = PBXGroup;
-			children = (
-				224620F566C5E89612CC961F670948B2 /* KMPermissionConfig.h */,
-				F968AAB8A97592BB381B51E683A7F014 /* KMPermissionConfig.m */,
-				429A4567754218D145A23C3623079177 /* KMPermissionManager.h */,
-				3310C4F437E96E0C9B1531EBB88827C2 /* KMPermissionManager.m */,
-				4881BCBB62795F019E0FABD1BA76FFEE /* Define */,
-				CA8C01235269A231D449F4816CCB3BEA /* Permission */,
-				DB78FD7383E634F16FB59F4B3CEABF4F /* Pod */,
-				B52D931CDCB3B031D6C628059F4C1936 /* Support Files */,
-			);
-			name = KMPermissionManager;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		B52D931CDCB3B031D6C628059F4C1936 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				D88ECEB5BE5A45D804F179F71EAB2AD4 /* KMPermissionManager.modulemap */,
-				55D56EAB43ED67FDFEB71BB034BBD42F /* KMPermissionManager.xcconfig */,
-				FF73B9FCF220339733EBBA34E1FF876A /* KMPermissionManager-dummy.m */,
-				654816028CC4E52D9F8057B7045D7D59 /* KMPermissionManager-Info.plist */,
-				5A13E1AF4EF5B98C6283F5268545E2E8 /* KMPermissionManager-prefix.pch */,
-				B34C4840FBCC4CB1D92D5DFFE120835F /* KMPermissionManager-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/KMPermissionManager";
-			sourceTree = "<group>";
-		};
-		CA8C01235269A231D449F4816CCB3BEA /* Permission */ = {
-			isa = PBXGroup;
-			children = (
-				2765DB0AAD7AC15E4573C7C7B5827EEA /* KMCalandarPermission.h */,
-				3FA13079EABF2AB37F1A3F3D431A1766 /* KMCalandarPermission.m */,
-				062B8C53F7D67CD3689BABBA104EB940 /* KMCameraPermission.h */,
-				7800EFE5E9F057277ADE3669627E1627 /* KMCameraPermission.m */,
-				D2A4813B0166FFE31553869A954D1676 /* KMContactsPermission.h */,
-				77B6024D1D6AB730660883788C0499B0 /* KMContactsPermission.m */,
-				91033F197980860AD84339536FE536E7 /* KMHealthPermission.h */,
-				8389958025E199E52CFDACC3DB103E29 /* KMHealthPermission.m */,
-				D86F89974AB5A404A642B18DC42B59D2 /* KMLocationPermission.h */,
-				6B48BF53592816BCAADFDDD4462DB820 /* KMLocationPermission.m */,
-				45E2761BF3CD224415C55A169EEA6CA6 /* KMMicrophonePermission.h */,
-				D5A051C92C4B9819DDED36E74BB7CAAF /* KMMicrophonePermission.m */,
-				06EAC2D222F0851B7D845BA90ED10731 /* KMNotificationPermission.h */,
-				C316112D140BC6A73FE6D86B99451AC5 /* KMNotificationPermission.m */,
-				8808B458B2768944518E5BD8D836FF33 /* KMPhotoLibrayPermission.h */,
-				560627180044AC146B4ECA951CC07E1F /* KMPhotoLibrayPermission.m */,
-				19CB62086ED7BF7A78BA46888F4E8668 /* KMRemindersPermission.h */,
-				CF68BFC94A899A4A11DFD787C00CE90D /* KMRemindersPermission.m */,
+				38517505ADD58A2F970B7E3E25402DA6 /* KMCalandarPermission.h */,
+				2AC85501E7D8EDEB7705ED31F05C2672 /* KMCalandarPermission.m */,
+				5F823D83CD67B7DEF1392EEC6191D0B3 /* KMCameraPermission.h */,
+				D4924687B14BAB3ADADB60DCA36A7EBE /* KMCameraPermission.m */,
+				286DFC0EC8401B9AE9FE0638A825D552 /* KMContactsPermission.h */,
+				E678AB064471847462DE6B4DF8609F1C /* KMContactsPermission.m */,
+				4AEB6C834DC3669F4F28151D866552A6 /* KMHealthPermission.h */,
+				61507813B0D8011D32E4954FE96452DE /* KMHealthPermission.m */,
+				9FC8C893D85F7B08F9157BD58F032CE5 /* KMLocationPermission.h */,
+				2D0013167E13294CC3BDCD8741EC22EA /* KMLocationPermission.m */,
+				6249205DF61826DE39C6231468014819 /* KMMicrophonePermission.h */,
+				B4508DA5E255CD60D1C2591977E8E9E2 /* KMMicrophonePermission.m */,
+				3D283C96F1C82164AD778050095B0D10 /* KMNotificationPermission.h */,
+				F40FAC80C04EC38419347F67A711A777 /* KMNotificationPermission.m */,
+				9949FF8F297BF38DD9E5FE847914B502 /* KMPhotoLibrayPermission.h */,
+				088D4644F8626ABDF88825192C9A176F /* KMPhotoLibrayPermission.m */,
+				C21B65A02BB36D971B30E8E416A30B46 /* KMRemindersPermission.h */,
+				0770F0E323C4C62EFE2EECE495A6CC5B /* KMRemindersPermission.m */,
 			);
 			name = Permission;
 			path = PermissionManager/Classes/Permission;
@@ -286,21 +294,19 @@
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				8FE181936D6BF7306DF86E79CFB1FB0D /* Development Pods */,
+				D7A878BBA5A5081EAA3E2324892864A2 /* Development Pods */,
 				F119B4A0ABE017AECEE69836596133B2 /* Frameworks */,
 				208565EFDD74D6C3444CBE6D1B893F89 /* Products */,
 				FC946C66F09F2CC3C6506A0D22E8E6AF /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		DB78FD7383E634F16FB59F4B3CEABF4F /* Pod */ = {
+		D7A878BBA5A5081EAA3E2324892864A2 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				E7BA99913A2F4EDAAC1D29C693F797AE /* KMPermissionManager.podspec */,
-				491CCCFC0BA7DD49FE2CB8634E0B94F1 /* LICENSE */,
-				261B44E8AEB0B900D644BE8B5CFADA06 /* README.md */,
+				046D4F1786467E6779D76B9EC5281C73 /* KMPermissionManager */,
 			);
-			name = Pod;
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		DDCB9F7D86B88B5E9D023D402C5B1485 /* Pods-PermissionManager_Tests */ = {
@@ -339,24 +345,25 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		ACD6EE142A2667CC3BE951D0016DA529 /* Headers */ = {
+		798DD196E8FF1F3FA85293AEC7573247 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F56141E0BC0471DC57C82D52A101ECAC /* KMCalandarPermission.h in Headers */,
-				F1F024FFC80B355DB6BDE587F2839BF7 /* KMCameraPermission.h in Headers */,
-				29374A30A3C9F54B5C72E67B12C285AA /* KMContactsPermission.h in Headers */,
-				4BDEF7A7A25747DC94D0C452E23FFA29 /* KMHealthPermission.h in Headers */,
-				1DE7DF7B11BF808F63023A515D052BED /* KMLocationPermission.h in Headers */,
-				35A6B44D27DBA069EAEB6CB4418EE606 /* KMMicrophonePermission.h in Headers */,
-				ACF586300E2818B4ABBE25A2D78B57CE /* KMNotificationPermission.h in Headers */,
-				B3B13C8B537A844E92ADCF37FA0FC802 /* KMPermissionConfig.h in Headers */,
-				A02567373FFE8739FC94CA3AFD22BF6E /* KMPermissionDefine.h in Headers */,
-				84F89CEECDEFBA6DE664CE5A4B7B60CD /* KMPermissionManager-umbrella.h in Headers */,
-				D5FAA7FEA984CA6D9E8C613E5FDDABAC /* KMPermissionManager.h in Headers */,
-				A6B8505AA141AF6D76BE6FCCA706784B /* KMPermissionProtocol.h in Headers */,
-				AD72AA413686E4A96FC1D40743891F55 /* KMPhotoLibrayPermission.h in Headers */,
-				C9A281B844ED5F92215B99649378D407 /* KMRemindersPermission.h in Headers */,
+				BD979E7F45C9E0131045ED3E92BE15D2 /* KMCalandarPermission.h in Headers */,
+				27C469C29C1A1BD78D0AF124A8533736 /* KMCameraPermission.h in Headers */,
+				4640F2ECC701DB07751B011041E9BA29 /* KMContactsPermission.h in Headers */,
+				3B682DAB1620B2FDA071A43F38CF7D38 /* KMHealthPermission.h in Headers */,
+				ABCFA444A281385D50583A1A141AAE63 /* KMLocationPermission.h in Headers */,
+				2B9F565510ED839BF9E258509F438019 /* KMMicrophonePermission.h in Headers */,
+				0DB4E0494102E9A5E4F553E76960CD3A /* KMNotificationPermission.h in Headers */,
+				7EA9C56D4848F92D3DDC2F89BA74F6F7 /* KMPermissionConfig+extend.h in Headers */,
+				BA936C8AD070836DEFB85834C323FBF2 /* KMPermissionConfig.h in Headers */,
+				F9EFA493A3498FB4601E20916338002B /* KMPermissionDefine.h in Headers */,
+				6478C63CFA66FC625258B6506AAF023B /* KMPermissionManager-umbrella.h in Headers */,
+				A881452FB885414E4B7006767FC1CB48 /* KMPermissionManager.h in Headers */,
+				368BF69DAAD1F5435ED74C049E7B4ADC /* KMPermissionProtocol.h in Headers */,
+				D75955A4D44CE3106357947958EE4AA4 /* KMPhotoLibrayPermission.h in Headers */,
+				650B18B9647D048A1D145FE4F94AE57B /* KMRemindersPermission.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,12 +388,12 @@
 /* Begin PBXNativeTarget section */
 		79D23B2E5943C7703A6BEB4D0AE03B65 /* KMPermissionManager */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 818F4E67C3BE49A842A3EBA3692D8BAE /* Build configuration list for PBXNativeTarget "KMPermissionManager" */;
+			buildConfigurationList = DE610BF98EF9CB56512A657318A3ECD6 /* Build configuration list for PBXNativeTarget "KMPermissionManager" */;
 			buildPhases = (
-				ACD6EE142A2667CC3BE951D0016DA529 /* Headers */,
-				C06FE68DAD8D6DE760C9B5EEC1538592 /* Sources */,
-				9C3B6ABC17C234532FD80CCF8D00EE29 /* Frameworks */,
-				325A7933C58D9F5C664050ED7B246865 /* Resources */,
+				798DD196E8FF1F3FA85293AEC7573247 /* Headers */,
+				711B1A81E489E122B7D1C32D8FD33B6A /* Sources */,
+				B9D9F8CFE2F1FA2383AEB89785BB7B59 /* Frameworks */,
+				6C9F4D51F8E3817B6689349C1A47A98B /* Resources */,
 			);
 			buildRules = (
 			);
@@ -465,7 +472,7 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		325A7933C58D9F5C664050ED7B246865 /* Resources */ = {
+		6C9F4D51F8E3817B6689349C1A47A98B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -497,22 +504,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C06FE68DAD8D6DE760C9B5EEC1538592 /* Sources */ = {
+		711B1A81E489E122B7D1C32D8FD33B6A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				735A273C1341F8AFF3A693A89B78C861 /* KMCalandarPermission.m in Sources */,
-				1C80D8366397624D32D384CBBE93B025 /* KMCameraPermission.m in Sources */,
-				6DF04D955EEDDFD4349540D80104E046 /* KMContactsPermission.m in Sources */,
-				3CC4F8FB59F5840A8D580D882DE5845D /* KMHealthPermission.m in Sources */,
-				495951CD9B2E43EC5F53740AD6738BED /* KMLocationPermission.m in Sources */,
-				41737E9C5FE56374826B8C79DDB8380B /* KMMicrophonePermission.m in Sources */,
-				41EF129664FEBCEFBEDD31D32BF4E49E /* KMNotificationPermission.m in Sources */,
-				965729BE80E08517B06B4ECE06418362 /* KMPermissionConfig.m in Sources */,
-				35873EA6826F59068CADAEBA4DE84F84 /* KMPermissionManager-dummy.m in Sources */,
-				192B68B49C373BF3808270C59F69A7C8 /* KMPermissionManager.m in Sources */,
-				2BAEADD6C9FF310EE4F5895FF02BCCD5 /* KMPhotoLibrayPermission.m in Sources */,
-				3F4E8C830563CD8F61D9539A960460D1 /* KMRemindersPermission.m in Sources */,
+				50CDFC26BB4A8FEF4B1111164E91E193 /* KMCalandarPermission.m in Sources */,
+				6026118BDD926545552E8A96136443E7 /* KMCameraPermission.m in Sources */,
+				DE07FA279B8473AED8A34B951703AF47 /* KMContactsPermission.m in Sources */,
+				B8EFE19D9C08185CF27FE1B00E86C679 /* KMHealthPermission.m in Sources */,
+				FB139A4584403727C96B81BC79091DCA /* KMLocationPermission.m in Sources */,
+				07297D67EADA223A9BB3B25809327079 /* KMMicrophonePermission.m in Sources */,
+				F6DB0930FAB4140BF9BF9CB16E9A4E16 /* KMNotificationPermission.m in Sources */,
+				79369AE1FACCCA96D39030E71177BD73 /* KMPermissionConfig+extend.m in Sources */,
+				CC3E2E492A7D48EB4FABB16BB35B964A /* KMPermissionConfig.m in Sources */,
+				8CFFE539E63A2D7FB8AC11780A0C1134 /* KMPermissionManager-dummy.m in Sources */,
+				1139A0D787B8B765E708FF22C06448B5 /* KMPermissionManager.m in Sources */,
+				2FA7545EE4C01BE834D6C57985AF8F45 /* KMPhotoLibrayPermission.m in Sources */,
+				0255528F91D3862DC49A084D3427AE1A /* KMRemindersPermission.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -542,38 +550,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		11D166D143251434D593B933FA6D2315 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 55D56EAB43ED67FDFEB71BB034BBD42F /* KMPermissionManager.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/KMPermissionManager/KMPermissionManager-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/KMPermissionManager/KMPermissionManager-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/KMPermissionManager/KMPermissionManager.modulemap";
-				PRODUCT_MODULE_NAME = KMPermissionManager;
-				PRODUCT_NAME = KMPermissionManager;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		19DC993B67C700611E83EB3C0E99A9E1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3EC3BCB76402FB6B291682208F488077 /* Pods-PermissionManager_Tests.debug.xcconfig */;
@@ -708,6 +684,38 @@
 			};
 			name = Release;
 		};
+		721D81808E28CE46C5BBF60CC2BD50AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9CD8A32CDE7B33649C97516B006D3A3 /* KMPermissionManager.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/KMPermissionManager/KMPermissionManager-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KMPermissionManager/KMPermissionManager-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/KMPermissionManager/KMPermissionManager.modulemap";
+				PRODUCT_MODULE_NAME = KMPermissionManager;
+				PRODUCT_NAME = KMPermissionManager;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		8F17DC3A99F99FBAD606CE6963886315 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -832,9 +840,9 @@
 			};
 			name = Debug;
 		};
-		BA05ECC3A099E6DCBFBEF50AACA9EE58 /* Debug */ = {
+		EC9553CED4674B164D905A114E4CF278 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 55D56EAB43ED67FDFEB71BB034BBD42F /* KMPermissionManager.xcconfig */;
+			baseConfigurationReference = A9CD8A32CDE7B33649C97516B006D3A3 /* KMPermissionManager.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -875,15 +883,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		818F4E67C3BE49A842A3EBA3692D8BAE /* Build configuration list for PBXNativeTarget "KMPermissionManager" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BA05ECC3A099E6DCBFBEF50AACA9EE58 /* Debug */,
-				11D166D143251434D593B933FA6D2315 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		C81EAEAB84C3FCD64232B8ADC181233C /* Build configuration list for PBXNativeTarget "Pods-PermissionManager_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -898,6 +897,15 @@
 			buildConfigurations = (
 				2CB3E5C31E5CF75091F3C22BAA20A16C /* Debug */,
 				2DF19F5B9EA3B7B674583956FE7309E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE610BF98EF9CB56512A657318A3ECD6 /* Build configuration list for PBXNativeTarget "KMPermissionManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC9553CED4674B164D905A114E4CF278 /* Debug */,
+				721D81808E28CE46C5BBF60CC2BD50AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

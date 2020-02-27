@@ -12,6 +12,7 @@
 
 #import "KMPermissionDefine.h"
 #import "KMPermissionProtocol.h"
+#import "KMPermissionConfig+extend.h"
 #import "KMPermissionConfig.h"
 #import "KMPermissionManager.h"
 #import "KMCalandarPermission.h"

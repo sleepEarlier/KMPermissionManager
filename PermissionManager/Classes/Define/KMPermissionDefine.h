@@ -20,7 +20,7 @@ typedef NS_ENUM(NSInteger, KMPermissionType) {
     KMPermissionTypeMicrophone,
     KMPermissionTypeNotification,
     KMPermissionTypeReminders,
-    KMPermissionTypeCalandar,
+    KMPermissionTypeCalendar,
     KMPermissionTypeHealth
 };
 

@@ -8,6 +8,7 @@
 #import "KMHealthPermission.h"
 #import "KMPermissionConfig.h"
 #import <HealthKit/HealthKit.h>
+#import "KMPermissionConfig+extend.h"
 
 @implementation KMHealthPermission
 

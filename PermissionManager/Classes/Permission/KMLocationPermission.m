@@ -8,6 +8,7 @@
 #import "KMLocationPermission.h"
 #import <CoreLocation/CoreLocation.h>
 #import "KMPermissionConfig.h"
+#import "KMPermissionConfig+extend.h"
 
 @interface KMLocationPermission () <CLLocationManagerDelegate>
 

@@ -6,7 +6,7 @@
 //
 
 #import "KMPermissionConfig.h"
-#import <objc/runtime.h>
+#import "KMPermissionConfig+extend.h"
 
 @implementation KMPermissionConfig
 
@@ -16,66 +16,69 @@
     return config;
 }
 
++ (instancetype)cameraConfig {
+    KMPermissionConfig *config = [KMPermissionConfig configWithType:KMPermissionTypeCamera];
+    return config;
+}
+
++ (instancetype)photoLibrayConfig {
+    KMPermissionConfig *config = [KMPermissionConfig configWithType:KMPermissionTypePhotoLibray];
+    return config;
+}
+
++ (instancetype)locationAlwaysConfigWithBackgroundUpdate:(BOOL)allowBackground {
+    KMPermissionConfig *config = [KMPermissionConfig configWithType:KMPermissionTypeLocation];
+    config.locationType = KMLocationTypeAlways;
+    config.allowsBackgroundLocationUpdates = allowBackground;
+    return config;
+}
+
++ (instancetype)locationWhenInUseConfigWithBackgroundUpdate:(BOOL)allowBackground {
+    KMPermissionConfig *config = [KMPermissionConfig configWithType:KMPermissionTypeLocation];
+    config.locationType = KMLocationTypeWhenInUse;
+    config.allowsBackgroundLocationUpdates = allowBackground;
+    return config;
+}
+
++ (instancetype)contactsConfig {
+    KMPermissionConfig *config = [KMPermissionConfig configWithType:KMPermissionTypeContacts];
+    return config;
+}
+
++ (instancetype)microphoneConfig {
+    KMPermissionConfig *config = [KMPermissionConfig configWithType:KMPermissionTypeMicrophone];
+    return config;
+}
+
++ (instancetype)notificationConfigWithOptions:(UNAuthorizationOptions)options API_AVAILABLE(ios(10.0)) {
+    KMPermissionConfig *config = [KMPermissionConfig configWithType:KMPermissionTypeNotification];
+    config.options = options;
+    return config;
+}
+
++ (instancetype)notificationConfigWithSettings:(UIUserNotificationSettings *)settings {
+    KMPermissionConfig *config = [KMPermissionConfig configWithType:KMPermissionTypeNotification];
+    config.settings = settings;
+    return config;
+}
+
++ (instancetype)remindersConfig {
+    KMPermissionConfig *config = [KMPermissionConfig configWithType:KMPermissionTypeReminders];
+    return config;
+}
+
++ (instancetype)calendarConfig {
+    KMPermissionConfig *config = [KMPermissionConfig configWithType:KMPermissionTypeCalendar];
+    return config;
+}
+
++ (instancetype)healthConfigWithReadTypes:(NSSet<HKObjectType *> *)readTypes ShareTypes:(NSSet<HKSampleType *> *)shareTypes {
+    [KMPermissionConfig setReadTypes:readTypes];
+    [KMPermissionConfig setShareTypes:shareTypes];
+    KMPermissionConfig *config = [KMPermissionConfig configWithType:KMPermissionTypeHealth];
+    return config;
+}
+
 @end
 
-@implementation KMPermissionConfig (location)
 
-- (KMLocationType)locationType {
-    return [objc_getAssociatedObject(self, _cmd) integerValue];
-}
-
-- (void)setLocationType:(KMLocationType)locationType {
-    objc_setAssociatedObject(self, @selector(locationType), @(locationType), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-}
-
-- (BOOL)allowsBackgroundLocationUpdates {
-    return [objc_getAssociatedObject(self, _cmd) boolValue];
-}
-
-- (void)setAllowsBackgroundLocationUpdates:(BOOL)allowsBackgroundLocationUpdates {
-    objc_setAssociatedObject(self, @selector(allowsBackgroundLocationUpdates), @(allowsBackgroundLocationUpdates), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-}
-
-@end
-
-@implementation KMPermissionConfig (notification)
-
-- (UNAuthorizationOptions)options {
-    return [objc_getAssociatedObject(self, _cmd) integerValue];
-}
-
-- (void)setOptions:(UNAuthorizationOptions)options {
-    objc_setAssociatedObject(self, @selector(options), @(options), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-}
-
-- (UIUserNotificationSettings *)settings {
-    return objc_getAssociatedObject(self, _cmd);
-}
-
-- (void)setSettings:(UIUserNotificationSettings *)settings {
-    objc_setAssociatedObject(self, @selector(settings), settings, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-}
-
-@end
-
-static NSSet<HKObjectType *> *readTypes = nil;
-static NSSet<HKSampleType *> *shareTypes = nil;
-@implementation KMPermissionConfig (health)
-
-+ (void)setReadTypes:(NSSet<HKObjectType *> *)types {
-    readTypes = types.copy;
-}
-
-+ (NSSet<HKObjectType *> *)readTypes {
-    return readTypes;
-}
-
-+ (void)setShareTypes:(NSSet<HKSampleType *> *)types {
-    shareTypes = types.copy;
-}
-
-+ (NSSet<HKSampleType *> *)shareTypes {
-    return shareTypes;
-}
-
-@end

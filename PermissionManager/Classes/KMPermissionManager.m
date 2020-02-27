@@ -108,7 +108,7 @@ static id staticCellularData = nil;
             return [KMNotificationPermission class];
         case KMPermissionTypeReminders:
             return [KMRemindersPermission class];
-        case KMPermissionTypeCalandar:
+        case KMPermissionTypeCalendar:
             return [KMCalandarPermission class];
         case KMPermissionTypeHealth:
             return [KMHealthPermission class];
