@@ -82,7 +82,7 @@
         }
     }
     else if (completion) {
-        completion(YES);
+        completion(NO);
     }
 }
 
