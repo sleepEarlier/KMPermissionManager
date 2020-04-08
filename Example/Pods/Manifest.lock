@@ -1,5 +1,22 @@
 PODS:
-  - KMPermissionManager (2.2.0)
+  - KMPermissionManager (3.0.0):
+    - KMPermissionManager/calendar (= 3.0.0)
+    - KMPermissionManager/Core (= 3.0.0)
+    - KMPermissionManager/health (= 3.0.0)
+    - KMPermissionManager/location (= 3.0.0)
+    - KMPermissionManager/notification (= 3.0.0)
+    - KMPermissionManager/reminder (= 3.0.0)
+  - KMPermissionManager/calendar (3.0.0):
+    - KMPermissionManager/Core
+  - KMPermissionManager/Core (3.0.0)
+  - KMPermissionManager/health (3.0.0):
+    - KMPermissionManager/Core
+  - KMPermissionManager/location (3.0.0):
+    - KMPermissionManager/Core
+  - KMPermissionManager/notification (3.0.0):
+    - KMPermissionManager/Core
+  - KMPermissionManager/reminder (3.0.0):
+    - KMPermissionManager/Core
 
 DEPENDENCIES:
   - KMPermissionManager (from `../`)
@@ -9,8 +26,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  KMPermissionManager: a29aba654cebded1787d2b1082ee413a3e224791
+  KMPermissionManager: 9f72a757e7635cecb2f1dd98f0710d54cafe04c9
 
-PODFILE CHECKSUM: a0cae42f81c88c49a4e3f91442bb7a0b31acd505
+PODFILE CHECKSUM: bb55b989bdf623e8543aa92761f07927a43d7f63
 
 COCOAPODS: 1.8.4

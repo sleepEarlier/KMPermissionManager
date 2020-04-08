@@ -10,13 +10,8 @@
 #import "KMPermissionProtocol.h"
 #import "KMCameraPermission.h"
 #import "KMContactsPermission.h"
-#import "KMHealthPermission.h"
-#import "KMLocationPermission.h"
 #import "KMMicrophonePermission.h"
-#import "KMNotificationPermission.h"
 #import "KMPhotoLibrayPermission.h"
-#import "KMRemindersPermission.h"
-#import "KMCalandarPermission.h"
 
 NSString * const KMCellularDataPermissionDidChangedNotification = @"KMCellularDataPermissionDidChangedNotification";
 NSString * const KMCellularDataRestrictedStateUserInfoKey = @"KMCellularDataRestrictedStateUserInfoKey";
@@ -98,20 +93,20 @@ static id staticCellularData = nil;
             return [KMCameraPermission class];
         case KMPermissionTypePhotoLibray:
             return [KMPhotoLibrayPermission class];
-        case KMPermissionTypeLocation:
-            return [KMLocationPermission class];
         case KMPermissionTypeContacts:
             return [KMContactsPermission class];
         case KMPermissionTypeMicrophone:
             return [KMMicrophonePermission class];
+        case KMPermissionTypeLocation:
+            return NSClassFromString(@"KMLocationPermission");
         case KMPermissionTypeNotification:
-            return [KMNotificationPermission class];
+            return NSClassFromString(@"KMNotificationPermission");
         case KMPermissionTypeReminders:
-            return [KMRemindersPermission class];
+            return NSClassFromString(@"KMRemindersPermission");
         case KMPermissionTypeCalendar:
-            return [KMCalandarPermission class];
+            return NSClassFromString(@"KMCalendarPermission");
         case KMPermissionTypeHealth:
-            return [KMHealthPermission class];
+            return NSClassFromString(@"KMHealthPermission");
             
         default:
             return nil;

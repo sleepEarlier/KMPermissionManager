@@ -46,11 +46,11 @@
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>用户上传个人头像时需要相册访问权限</string>
 	<key>NSHealthClinicalHealthRecordsShareUsageDescription</key>
-	<string>读取你的步数</string>
+	<string>需要你的同意，读取健康中的的步数，展示在个人中心，获取绿色能量</string>
 	<key>NSHealthShareUsageDescription</key>
-	<string>分享你的步数</string>
+	<string>需要你的同意，从健康中分享你的步数展示在个人中心</string>
 	<key>NSHealthUpdateUsageDescription</key>
-	<string>更新你的步数</string>
+	<string>需要您的同意，将新的身体数据更新到健康中心</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

@@ -8,6 +8,11 @@
 
 #import "KMViewController.h"
 #import <KMPermissionManager.h>
+#import <KMPermissionConfig+location.h>
+#import <KMPermissionConfig+notification.h>
+#import <KMPermissionConfig+calendar.h>
+#import <KMPermissionConfig+reminder.h>
+#import <KMPermissionConfig+health.h>
 
 @interface KMViewController ()
 

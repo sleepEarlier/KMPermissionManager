@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'KMPermissionManager'
-  s.version          = '2.3.0'
+  s.version          = '3.0.0'
   s.summary          = 'A tool help to handle permission stuff on iOS'
 
 # This description is used to generate tags and improve search results.
@@ -30,13 +30,47 @@ A simple tool help to handle permiss stuff on iOS, with unify permission status.
 
   s.platform = :ios, '9.0'
 
-  s.source_files = 'PermissionManager/Classes/**/*'
+#  s.source_files = "PermissionManager/Classes/Core/**/*"
   
   # s.resource_bundles = {
   #   'PermissionManager' => ['PermissionManager/Assets/*.png']
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  s.frameworks = 'UIKit', 'Foundation', 'AVFoundation', 'Photos', 'CoreLocation', 'CoreTelephony', 'Contacts', 'HealthKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+#  s.frameworks = 'UIKit', 'Foundation', 'AVFoundation', 'Photos', 'CoreLocation', 'CoreTelephony', 'Contacts', 'HealthKit'
+  s.frameworks = 'UIKit', 'Foundation', 'AVFoundation', 'Photos', 'CoreTelephony', 'Contacts'
+  
+  s.subspec 'Core' do |core|
+    core.source_files = "PermissionManager/Classes/Core/**/*"
+  end
+  
+  s.subspec 'calendar' do |calendar|
+    calendar.source_files = "PermissionManager/Classes/SubPermission/calendar/*"
+    calendar.frameworks = 'EventKit'
+    calendar.dependency 'KMPermissionManager/Core'
+  end
+  
+  s.subspec 'health' do |health|
+    health.source_files = "PermissionManager/Classes/SubPermission/health/*"
+    health.frameworks = 'HealthKit'
+    health.dependency 'KMPermissionManager/Core'
+  end
+  
+  s.subspec 'location' do |location|
+    location.source_files = "PermissionManager/Classes/SubPermission/location/*"
+    location.frameworks = 'CoreLocation'
+    location.dependency 'KMPermissionManager/Core'
+  end
+  
+  s.subspec 'notification' do |notification|
+    notification.source_files = "PermissionManager/Classes/SubPermission/notification/*"
+    notification.frameworks = 'UserNotifications'
+    notification.dependency 'KMPermissionManager/Core'
+  end
+  
+  s.subspec 'reminder' do |reminder|
+    reminder.source_files = "PermissionManager/Classes/SubPermission/reminder/*"
+    reminder.frameworks = 'EventKit'
+    reminder.dependency 'KMPermissionManager/Core'
+  end
 end

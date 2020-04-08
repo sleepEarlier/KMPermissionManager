@@ -1,15 +1,15 @@
 //
-//  KMCalandarPermission.m
+//  KMCalendarPermission.m
 //  KMPermissionManager
 //
 //  Created by usopp on 2020/2/21.
 //
 
-#import "KMCalandarPermission.h"
+#import "KMCalendarPermission.h"
 #import "KMPermissionConfig.h"
 #import <EventKit/EventKit.h>
 
-@implementation KMCalandarPermission
+@implementation KMCalendarPermission
 
 + (EKAuthorizationStatus)status {
     EKAuthorizationStatus status = [EKEventStore authorizationStatusForEntityType:(EKEntityTypeEvent)];

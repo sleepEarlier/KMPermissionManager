@@ -4,7 +4,8 @@ use_frameworks!
 platform :ios, '9.0'
 
 target 'PermissionManager_Example' do
-  pod 'KMPermissionManager', :path => '../'
+#  pod 'KMPermissionManager', :subspecs => ['calendar'], :path => '../'
+pod 'KMPermissionManager', :path => '../'
 
   target 'PermissionManager_Tests' do
     inherit! :search_paths

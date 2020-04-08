@@ -1,5 +1,5 @@
 //
-//  KMCalandarPermission.h
+//  KMCalendarPermission.h
 //  KMPermissionManager
 //
 //  Created by usopp on 2020/2/21.
@@ -9,7 +9,7 @@
 #import "KMPermissionProtocol.h"
 NS_ASSUME_NONNULL_BEGIN
 
-@interface KMCalandarPermission : NSObject <KMPermissionProtocol>
+@interface KMCalendarPermission : NSObject <KMPermissionProtocol>
 
 @end
 

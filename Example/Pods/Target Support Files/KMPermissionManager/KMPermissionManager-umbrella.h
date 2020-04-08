@@ -10,19 +10,23 @@
 #endif
 #endif
 
-#import "KMPermissionDefine.h"
-#import "KMPermissionProtocol.h"
-#import "KMPermissionConfig+extend.h"
-#import "KMPermissionConfig.h"
-#import "KMPermissionManager.h"
-#import "KMCalandarPermission.h"
 #import "KMCameraPermission.h"
 #import "KMContactsPermission.h"
-#import "KMHealthPermission.h"
-#import "KMLocationPermission.h"
 #import "KMMicrophonePermission.h"
-#import "KMNotificationPermission.h"
 #import "KMPhotoLibrayPermission.h"
+#import "KMPermissionDefine.h"
+#import "KMPermissionProtocol.h"
+#import "KMPermissionConfig.h"
+#import "KMPermissionManager.h"
+#import "KMCalendarPermission.h"
+#import "KMPermissionConfig+calendar.h"
+#import "KMHealthPermission.h"
+#import "KMPermissionConfig+health.h"
+#import "KMLocationPermission.h"
+#import "KMPermissionConfig+location.h"
+#import "KMNotificationPermission.h"
+#import "KMPermissionConfig+notification.h"
+#import "KMPermissionConfig+reminder.h"
 #import "KMRemindersPermission.h"
 
 FOUNDATION_EXPORT double KMPermissionManagerVersionNumber;
