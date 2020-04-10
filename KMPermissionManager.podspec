@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'KMPermissionManager'
-  s.version          = '2.4.0'
+  s.version          = '2.4.1'
   s.summary          = 'A tool help to handle permission stuff on iOS'
 
 # This description is used to generate tags and improve search results.
@@ -39,7 +39,7 @@ A simple tool help to handle permiss stuff on iOS, with unify permission status.
   # s.public_header_files = 'Pod/Classes/**/*.h'
 #  s.frameworks = 'UIKit', 'Foundation', 'AVFoundation', 'Photos', 'CoreLocation', 'CoreTelephony', 'Contacts', 'HealthKit'
   s.frameworks = 'UIKit', 'Foundation', 'AVFoundation', 'Photos', 'CoreTelephony', 'Contacts'
-  
+  s.default_subspec = 'Core'
   s.subspec 'Core' do |core|
     core.source_files = "PermissionManager/Classes/Core/**/*"
   end
