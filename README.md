@@ -20,12 +20,13 @@
 | Microphone   | ✅       |
 | Contacts     | ✅       |
 | Location     | ✅       |
-| PhotoLibray  | ✅       |
+| PhotoLibrary  | ✅       |
 | Camera       | ✅       |
 
-CellularData Monitor is supported.
+CellularData Monitor is supported too. The library Provide unify request method and permission status.
 
-Provide unify request method and permission status.
+Core spec (default spec) contain Camera、PhotoLibrary、Microphone、Contacts permission, to use other permission, pod other subspec like `calandar`.
+
 
 ## Example
 
