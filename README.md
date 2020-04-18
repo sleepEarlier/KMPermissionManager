@@ -25,7 +25,7 @@
 
 CellularData Monitor is supported too. The library Provide unify request method and permission status.
 
-Core spec (default spec) contain Camera、PhotoLibrary、Microphone、Contacts permission, to use other permission, pod other subspec like `calandar`.
+Core spec (default spec) contain Camera、PhotoLibrary、Microphone、Contacts permissions, to use other permissions, pod other subspec like `calandar`.
 
 
 ## Example
@@ -60,12 +60,13 @@ config.allowsBackgroundLocationUpdates = NO;
 1. Unify permission status value (`KMPermissionStatus`)
    
    ```objectivec
+   // NotDetermined、Restricted、Denied、Authorized
    + (KMPermissionStatus)unifyStatusForPermission:(KMPermissionType)type;
    ```
    
    
 
-2. Raw permission status value, like `CNAuthorizationStatus`、`AVAuthorizationStatus`...
+2.Get raw permission status value, like `CNAuthorizationStatus`、`AVAuthorizationStatus`...
    
    ```objectivec
    + (NSInteger)rawStatusForPermission:(KMPermissionType)type;
@@ -85,7 +86,11 @@ PermissionManager is available through [CocoaPods](https://cocoapods.org). To in
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'PermissionManager'
+# use default spec
+pod 'KMPermissionManager', '~> 2.4.0'
+
+# also calendar、reminder
+pod 'KMPermissionManager', '~> 2.4.0', :subspecs => ['calendar', 'reminder']
 ```
 
 ## Author
@@ -94,4 +99,4 @@ Usopp
 
 ## License
 
-PermissionManager is available under the MIT license. See the LICENSE file for more info.
+KMPermissionManager is available under the MIT license. See the LICENSE file for more info.
