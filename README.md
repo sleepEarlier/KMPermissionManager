@@ -25,7 +25,7 @@
 
 CellularData Monitor is supported too. The library Provide unify request method and permission status.
 
-Core spec (default spec) contain Camera、PhotoLibrary、Microphone、Contacts permissions, to use other permissions, pod other subspec like `calandar`.
+Core spec (default spec) contain Camera、PhotoLibrary、Microphone、Contacts permissions, to include other permissions, pod subspec like `calandar`、`reminder`.
 
 
 ## Example
@@ -66,7 +66,7 @@ config.allowsBackgroundLocationUpdates = NO;
    
    
 
-2.Get raw permission status value, like `CNAuthorizationStatus`、`AVAuthorizationStatus`...
+2. Get raw permission status value, like `CNAuthorizationStatus`、`AVAuthorizationStatus`...
    
    ```objectivec
    + (NSInteger)rawStatusForPermission:(KMPermissionType)type;
