@@ -87,10 +87,10 @@ it, simply add the following line to your Podfile:
 
 ```ruby
 # use default spec
-pod 'KMPermissionManager', '~> 2.4.0'
+pod 'KMPermissionManager', '~> 2.4.1'
 
 # also calendar、reminder
-pod 'KMPermissionManager', '~> 2.4.0', :subspecs => ['calendar', 'reminder']
+pod 'KMPermissionManager', '~> 2.4.1', :subspecs => ['calendar', 'reminder']
 ```
 
 ## Author
